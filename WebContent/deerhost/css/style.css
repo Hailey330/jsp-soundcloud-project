@@ -347,7 +347,7 @@ ol {
 	position: relative;
 	overflow: hidden;
 	border-top: 4px solid #f50;
-	background-color: #120851;
+	background-color: #000000;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -1057,7 +1057,7 @@ ol {
 	position: relative;
 	z-index: 99;
 	padding-top: 140px;
-	margin-top: -225px;
+	margin-top: -240px;
 }
 
 .footer__text-about {
@@ -1094,7 +1094,7 @@ ol {
 	color: #c4c4c4;
 	text-align: center;
 	padding: 25px 0;
-	border-top: 1px solid #2a2163;
+	border-top: 1px solid rgba(255,255,255,0.24);
 	margin-top: 20px;
 }
 

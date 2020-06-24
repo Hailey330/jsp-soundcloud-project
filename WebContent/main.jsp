@@ -36,11 +36,11 @@
             <span class="fa fa-times-circle-o"></span>
         </div>
         <div class="offcanvas__logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
+            <a href="#"><img src="deerhost/img/logo-white-width.png" alt=""></a>
         </div>
         <nav class="offcanvas__menu mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
+                <li class="active"><a href="./main.jsp">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./hosting.html">Hosting</a></li>
                 <li><a href="#">Pages</a>
@@ -77,14 +77,14 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3">
 					<div class="header__logo">
-						<a href="./index.html"><img src="deerhost/img/logo-white.png" alt=""></a>
+						<a href="./main.jsp"><img src="deerhost/img/logo-white-width.png" alt=""></a>
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-9">
 					<nav class="header__menu">
 						<ul>
-							<li><a href="user/test.jsp">Sign in</a></li>
-							<li><a href="#" class="create__btn">Create account</a></li>
+							<li><a href="user/login.jsp">Sign in</a></li>
+							<li><a href="user/join.jsp" class="create__btn">Create account</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -99,7 +99,7 @@
 	<!-- Hero Section Begin -->
 	<section class="hero-section">
 		<div class="hero__slider owl-carousel">
-			<div class="hero__item set-bg" data-setbg="deerhost/img/hero/hero-1.jpg">
+			<div class="hero__item set-bg" data-setbg="deerhost/img/hero/hero-3.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6">
@@ -108,18 +108,18 @@
 								<h5>
 									Discover, stream, and share<br />a constantly expanding mix of music
 								</h5>
-								<a href="#" class="primary-btn">Sign up for free</a>
+								<a href="user/join.jsp" class="primary-btn">Sign up for free</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="hero__img">
-								<img src="deerhost/img/hero/hero-right.png" alt="">
+								<img src="deerhost/img/hero/creator.webp" alt="">
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="hero__item set-bg" data-setbg="deerhost/img/hero/hero-1.jpg">
+			<div class="hero__item set-bg" data-setbg="deerhost/img/hero/hero-4.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6">
@@ -128,12 +128,12 @@
 								<h5>
 									Get on SoundCloud to connect with fans,<br />share your sounds, and grow your audience.
 								</h5>
-								<a href="#" class="primary-btn">Sign up for free</a>
+								<a href="user/join.jsp" class="primary-btn">Sign up for free</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="hero__img">
-								<img src="deerhost/img/hero/hero-right.png" alt="">
+								<img src="deerhost/img/hero/create.webp" alt="">
 							</div>
 						</div>
 					</div>

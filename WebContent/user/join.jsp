@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -8,35 +9,51 @@
 <meta name="keywords" content="Deerhost, unica, creative, html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Sign in SoundCloud</title>
+<title>Create account SoundCloud</title>
 
 <!-- Google Font -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
+	rel="stylesheet">
 
 <!-- Css Styles -->
-<link rel="stylesheet" href="../deerhost/css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="../deerhost/css/font-awesome.min.css" type="text/css">
-<link rel="stylesheet" href="../deerhost/css/elegant-icons.css" type="text/css">
-<link rel="stylesheet" href="../deerhost/css/flaticon.css" type="text/css">
-<link rel="stylesheet" href="../deerhost/css/owl.carousel.min.css" type="text/css">
-<link rel="stylesheet" href="../deerhost/css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="../deerhost/css/bootstrap.min.css"
+	type="text/css">
+<link rel="stylesheet" href="../deerhost/css/font-awesome.min.css"
+	type="text/css">
+<link rel="stylesheet" href="../deerhost/css/elegant-icons.css"
+	type="text/css">
+<link rel="stylesheet" href="../deerhost/css/flaticon.css"
+	type="text/css">
+<link rel="stylesheet" href="../deerhost/css/owl.carousel.min.css"
+	type="text/css">
+<link rel="stylesheet" href="../deerhost/css/slicknav.min.css"
+	type="text/css">
 <link rel="stylesheet" href="../deerhost/css/style.css" type="text/css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../login/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css"
+	href="../login/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css"
+	href="../login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../login/fonts/iconic/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" type="text/css"
+	href="../login/fonts/iconic/css/material-design-iconic-font.min.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../login/vendor/animate/animate.css">
+<link rel="stylesheet" type="text/css"
+	href="../login/vendor/animate/animate.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../login/vendor/css-hamburgers/hamburgers.min.css">
+<link rel="stylesheet" type="text/css"
+	href="../login/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../login/vendor/animsition/css/animsition.min.css">
+<link rel="stylesheet" type="text/css"
+	href="../login/vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../login/vendor/select2/select2.min.css">
+<link rel="stylesheet" type="text/css"
+	href="../login/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../login/vendor/daterangepicker/daterangepicker.css">
+<link rel="stylesheet" type="text/css"
+	href="../login/vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="../login/css/util.css">
 <link rel="stylesheet" type="text/css" href="../login/css/main.css">
@@ -56,7 +73,7 @@
 			<span class="fa fa-times-circle-o"></span>
 		</div>
 		<div class="offcanvas__logo">
-			<a href="#"><img src="../deerhost/img/logo.png" alt=""></a>
+			<a href="#"><img src="../deerhost/img/logo-white.png" alt=""></a>
 		</div>
 		<nav class="offcanvas__menu mobile-menu">
 			<ul>
@@ -76,8 +93,10 @@
 		<div id="mobile-menu-wrap"></div>
 		<div class="offcanvas__auth">
 			<ul>
-				<li><a href="#"><span class="icon_chat_alt"></span> Live chat</a></li>
-				<li><a href="#"><span class="fa fa-user"></span> Login / Register</a></li>
+				<li><a href="#"><span class="icon_chat_alt"></span> Live
+						chat</a></li>
+				<li><a href="#"><span class="fa fa-user"></span> Login /
+						Register</a></li>
 			</ul>
 		</div>
 		<div class="offcanvas__info">
@@ -92,26 +111,6 @@
 	<!-- Header Section Begin -->
 	<header class="header-section header-normal">
 		<div class="header__front">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-3">
-						<div class="header__logo">
-							<a href="./index.html"><img src="../deerhost/img/logo.png" alt=""></a>
-						</div>
-					</div>
-					<div class="col-lg-9 col-md-9">
-						<nav class="header__menu">
-							<ul>
-								<li><a href="./index.html">Home</a></li>
-								<li><a href="./about.html">About</a></li>
-								<li><a href="./hosting.html">Hosting</a></li>
-								<li class="active"><a href="./blog.html">News</a></li>
-								<li><a href="./contact.html">Contact</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
 			<div class="canvas__open">
 				<span class="fa fa-bars"></span>
 			</div>
@@ -120,34 +119,36 @@
 	<!-- Header End -->
 
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('../login/images/main.jpeg');">
+		<div class="container-login100"
+			style="background-image: url('../login/images/main.jpeg');">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-34 p-t-27">
-						Sign in
-					</span>
+					<span class="login100-form-title p-b-50 p-t-27"> Create
+						account </span>
 
-					<div class="wrap-input100 validate-input" data-validate="Enter username">
-						<input class="input100" type="text" name="username" placeholder="Your email address">
-						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					<div class="wrap-input100 validate-input"
+						data-validate="Enter your name">
+						<input class="input100" type="text" name="username"
+							placeholder="Your ID"> <span
+							class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Password">
-						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+					<div class="wrap-input100 validate-input"
+						data-validate="Enter your email">
+						<input class="input100" type="text" name="email"
+							placeholder="Your email address"> <span
+							class="focus-input100" data-placeholder="&#xf15a;"></span>
 					</div>
 
-					<div class="contact100-form-checkbox">
-						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-						<label class="label-checkbox100" for="ckb1">
-							Remember me
-						</label>
+					<div class="wrap-input100 validate-input"
+						data-validate="Enter your password">
+						<input class="input100" type="password" name="pass"
+							placeholder="Your Password"> <span class="focus-input100"
+							data-placeholder="&#xf191;"></span>
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Continue
-						</button>
+						<button class="login100-form-btn">Continue</button>
 					</div>
 
 					<div class="text-center p-t-15">
@@ -157,15 +158,11 @@
 					</div>
 
 					<div class="container-kakao-form-btn p-t-15">
-						<button class="kakao-form-btn">
-							Continue with Kakao
-						</button>
+						<button class="kakao-form-btn">Continue with Kakao</button>
 					</div>
 
 					<div class="text-center p-t-40">
-						<a class="txt2" href="#">
-							Not a member?
-						</a>
+						<a class="txt2" href="#"> Not a member? </a>
 					</div>
 				</form>
 			</div>
@@ -177,30 +174,8 @@
 
 	<!-- Footer Section Begin -->
 	<footer class="footer-section">
-		<div class="footer__top">
+		<div class="footer__text">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-md-8">
-						<div class="footer__top-auth">
-							<h5>Thanks for listening. Now join in.</h5>
-							<a href="#" class="primary-btn">Create account</a> <a href="#" class="primary-btn sign-up">Sign in</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer__text set-bg" data-setbg="../deerhost/img/footer-bg.png">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-6 col-sm-12">
-						<div class="footer__text-about">
-							<div class="footer__social">
-								<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-youtube-play"></i></a> <a href="#"><i class="fa fa-instagram"></i></a>
-							</div>
-						</div>
-					</div>
-
-				</div>
 				<div class="footer__text-copyright">
 					<p>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -208,7 +183,9 @@
 						<script>
 							document.write(new Date().getFullYear());
 						</script>
-						All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						All rights reserved | This template is made with <i
+							class="fa fa-heart" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
 				</div>
