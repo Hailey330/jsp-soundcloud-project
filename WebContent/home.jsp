@@ -98,7 +98,14 @@
 							<li><a href="#">Stream</a></li>
 							<li><a href="#">Library</a></li>
 							<li class="active"><a href="#">Upload</a></li>
-							<li><a href="#">Profile</a></li>
+							<li><a href="#">YOURS</a>
+								 <ul class="dropdown">
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="/soundcloud/board?cmd=Library">Likes</a></li>
+                                    <li><a href="/soundcloud/board?cmd=Library">Following</a></li>
+                                    <li><a href="/soundcloud/users?cmd=logout">Sign out</a></li>
+                                </ul>
+							</li>
 						</ul>
 					</nav>
 				</div>

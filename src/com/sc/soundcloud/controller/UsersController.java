@@ -1,6 +1,7 @@
 package com.sc.soundcloud.controller;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,8 +12,9 @@ import javax.servlet.http.HttpSession;
 import com.sc.soundcloud.action.Action;
 import com.sc.soundcloud.action.users.UsersJoinAction;
 import com.sc.soundcloud.action.users.UsersJoinProcAction;
-import com.sc.soundcloud.action.users.UsersloginAction;
-import com.sc.soundcloud.action.users.UsersloginProcAction;
+import com.sc.soundcloud.action.users.UsersLoginAction;
+import com.sc.soundcloud.action.users.UsersLoginProcAction;
+import com.sc.soundcloud.action.users.UsersLogoutAction;
 
 @WebServlet("/users")
 public class UsersController extends HttpServlet {
@@ -47,9 +49,11 @@ public class UsersController extends HttpServlet {
 		} else if(cmd.equals("joinProc")) {
 			return new UsersJoinProcAction();
 		} else if(cmd.equals("login")) {
-			return new UsersloginAction();
+			return new UsersLoginAction();
 		} else if(cmd.equals("loginProc")) {
-			return new UsersloginProcAction();
+			return new UsersLoginProcAction();
+		} else if(cmd.equals("logout")) {
+			return new UsersLogoutAction();
 		}
 		return null;
 	}

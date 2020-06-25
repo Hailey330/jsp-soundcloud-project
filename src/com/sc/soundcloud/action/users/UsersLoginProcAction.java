@@ -14,7 +14,7 @@ import com.sc.soundcloud.model.Users;
 import com.sc.soundcloud.repository.UsersRepository;
 import com.sc.soundcloud.util.Script;
 
-public class UsersloginProcAction implements Action {
+public class UsersLoginProcAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
