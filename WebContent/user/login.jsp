@@ -100,12 +100,10 @@
 	<!-- Offcanvas Menu End -->
 
 	<!-- Header Section Begin -->
-	<header class="header-section header-normal">
-		<div class="header__front">
+	<header class="header__front">
 			<div class="canvas__open">
 				<span class="fa fa-bars"></span>
 			</div>
-		</div>
 	</header>
 	<!-- Header End -->
 

@@ -96,13 +96,13 @@
 			<div class="row header__front">
 				<div class="col-lg-1 col-md-1">
 					<div class="header__logo">
-						<a href="./discover.jsp"><img src="deerhost/img/logo-white-cloud.png" alt=""></a>
+						<a href="./discoverTest.jsp"><img src="deerhost/img/logo-white-cloud.png" alt=""></a>
 					</div>
 				</div>
 				<div class="col-lg-8 col-md-8">
 					<nav class="header__menu">
 						<ul>
-							<li><a href="./discover.jsp">Home</a></li>
+							<li><a href="./discoverTest.jsp">Home</a></li>
 							<li><a href="#">Stream</a></li>
 							<li><a href="#">Library</a></li>
 							<li class="active"><a href="#">Upload</a></li>

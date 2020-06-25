@@ -194,6 +194,17 @@ ol {
 	border-radius: 15px;
 }
 
+.site-search-btn {
+	font-size: 10px;
+	color: #ffffff;
+	font-weight: 100;
+	display: inline-block;
+	padding: 13px 30px 12px;
+	background: #ff5500;
+	border: none;
+	border-radius: 15px;
+}
+
 /* Preloder */
 
 #preloder {
@@ -282,7 +293,7 @@ ol {
 	float: left;
 }
 
-.row .header__logo {
+.row .header__logo .left {
 	background: linear-gradient(#f70, #f30);
 }
 
@@ -296,11 +307,11 @@ ol {
 
 .header-section.header-normal {
 	position: relative;
-	background: #120851;
+	background: #000000;
 }
 
-.header-section.header-normal .header__logo {
-	padding-bottom: 30px;
+.header-section.header-normal {
+	padding-bottom: 10px;
 }
 
 .header-section.header-normal .header__menu {
@@ -371,11 +382,12 @@ ol {
 	position: relative;
 	overflow: hidden;
 	border-top: 4px solid #f50;
-	background-color: #000000;
+/* 	background-color: #000000; */
 	-webkit-font-smoothing: antialiased;
 }
 
 .header__logo {
+	padding-bottom: 10px;
 	padding-top: 30px;
 }
 
@@ -385,7 +397,7 @@ ol {
 
 .header__menu {
 	text-align: center;
-	padding-top: 32px;
+	padding-top: 30px;
 }
 
 .header__menu ul li {
@@ -444,8 +456,7 @@ ol {
 .header__menu ul li a {
 	color: #ffffff;
 	font-size: 14px;
-	font-weight: 500;
-	text-transform: uppercase;
+	font-weight: 200;
 	display: block;
 	padding: 0 3px;
 	position: relative;
@@ -1719,12 +1730,25 @@ ol {
   Blog
 -----------------------*/
 
+.blog-section {
+	margin-top: 40px;
+	margin-bottom: 150px;
+}
+
+.blog__title {
+	margin-bottom: 10px;
+}
+
+.blog__subtitle {
+	margin-bottom: 40px;
+}
 .blog__item {
 	margin-bottom: 40px;
 }
 
 .blog__item .blog__pic {
-	height: 253px;
+	width: 175px;
+	height: 170px;
 	position: relative;
 }
 
@@ -1742,8 +1766,7 @@ ol {
 }
 
 .blog__item .blog__text {
-	padding-left: 30px;
-	padding-top: 25px;
+	padding-top: 5px;
 }
 
 .blog__item .blog__text h5 {
@@ -1751,8 +1774,8 @@ ol {
 }
 
 .blog__item .blog__text h5 a {
-	font-size: 20px;
-	font-weight: 700;
+	font-size: 15px;
+	font-weight: 500;
 	color: #111111;
 	line-height: 27px;
 }
@@ -1804,7 +1827,6 @@ ol {
 .blog__sidebar .blog__sidebar__item .sidebar__title h6 {
 	color: #111111;
 	font-weight: 700;
-	text-transform: uppercase;
 	position: relative;
 	display: inline-block;
 	padding: 0 5px;
