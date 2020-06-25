@@ -9,11 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.sc.soundcloud.action.Action;
 
-public class UsersJoinAction implements Action {
+public class UsersloginAction implements Action{
+
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		RequestDispatcher dis = request.getRequestDispatcher("user/join.jsp");
+		RequestDispatcher dis = request.getRequestDispatcher("user/login.jsp");
 		dis.forward(request, response);
 	}
 }

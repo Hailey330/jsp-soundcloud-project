@@ -19,5 +19,4 @@ public class Users {
 	private String userProfile;
 	private String userRole;
 	private Timestamp createDate;
-	
 }

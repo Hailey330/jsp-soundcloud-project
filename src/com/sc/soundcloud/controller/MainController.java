@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.sc.soundcloud.action.Action;
+import com.sc.soundcloud.action.main.HomePageAction;
 import com.sc.soundcloud.action.main.MainPageAction;
 
 @WebServlet("/main")
@@ -42,6 +43,8 @@ public class MainController extends HttpServlet {
 	public Action router(String cmd) {
 		if(cmd.equals("page")) {
 			return new MainPageAction();
+		} else if (cmd.equals("home")) {
+			return new HomePageAction();
 		}
 		return null;
 	}

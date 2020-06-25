@@ -21,26 +21,18 @@
 <link rel="stylesheet" href="deerhost/css/owl.carousel.min.css" type="text/css">
 <link rel="stylesheet" href="deerhost/css/slicknav.min.css" type="text/css">
 <link rel="stylesheet" href="deerhost/css/style.css" type="text/css">
-<!--===============================================================================================-->
+
 <link rel="stylesheet" type="text/css" href="login/vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="login/fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="login/vendor/animate/animate.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="login/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="login/vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="login/vendor/select2/select2.min.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="login/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="login/css/util.css">
 <link rel="stylesheet" type="text/css" href="login/css/main.css">
-<!--===============================================================================================-->
+
 </head>
 
 <body>
@@ -96,17 +88,17 @@
 			<div class="row header__front">
 				<div class="col-lg-1 col-md-1">
 					<div class="header__logo">
-						<a href="./discover.jsp"><img src="deerhost/img/logo-white-cloud.png" alt=""></a>
+						<a href="/soundcloud/main?cmd=home"><img src="deerhost/img/logo-white-cloud.png" alt=""></a>
 					</div>
 				</div>
 				<div class="col-lg-8 col-md-8">
 					<nav class="header__menu">
 						<ul>
-							<li><a href="./discover.jsp">Home</a></li>
+							<li><a href="/soundcloud/main?cmd=home">Home</a></li>
 							<li><a href="#">Stream</a></li>
 							<li><a href="#">Library</a></li>
 							<li class="active"><a href="#">Upload</a></li>
-							<li><a href="./contact.html">Profile</a></li>
+							<li><a href="#">Profile</a></li>
 						</ul>
 					</nav>
 				</div>

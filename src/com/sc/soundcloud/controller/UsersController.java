@@ -10,6 +10,9 @@ import javax.servlet.http.HttpSession;
 
 import com.sc.soundcloud.action.Action;
 import com.sc.soundcloud.action.users.UsersJoinAction;
+import com.sc.soundcloud.action.users.UsersJoinProcAction;
+import com.sc.soundcloud.action.users.UsersloginAction;
+import com.sc.soundcloud.action.users.UsersloginProcAction;
 
 @WebServlet("/users")
 public class UsersController extends HttpServlet {
@@ -41,6 +44,12 @@ public class UsersController extends HttpServlet {
 	public Action router(String cmd) {
 		if(cmd.equals("join")) {
 			return new UsersJoinAction();
+		} else if(cmd.equals("joinProc")) {
+			return new UsersJoinProcAction();
+		} else if(cmd.equals("login")) {
+			return new UsersloginAction();
+		} else if(cmd.equals("loginProc")) {
+			return new UsersloginProcAction();
 		}
 		return null;
 	}

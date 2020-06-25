@@ -1,4 +1,4 @@
-package com.sc.soundcloud.action.users;
+package com.sc.soundcloud.action.main;
 
 import java.io.IOException;
 
@@ -9,11 +9,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.sc.soundcloud.action.Action;
 
-public class UsersJoinAction implements Action {
+public class HomePageAction implements Action {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		RequestDispatcher dis = request.getRequestDispatcher("user/join.jsp");
+		RequestDispatcher dis = request.getRequestDispatcher("home.jsp");
 		dis.forward(request, response);
 	}
 }

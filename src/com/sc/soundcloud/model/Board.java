@@ -16,5 +16,7 @@ public class Board {
 	private int userId;
 	private String title;
 	private String content;
+	private int likeCount;
+	private int playCount;
 	private Timestamp createDate;
 }
