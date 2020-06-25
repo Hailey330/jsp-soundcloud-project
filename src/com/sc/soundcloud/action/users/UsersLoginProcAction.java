@@ -53,7 +53,7 @@ public class UsersLoginProcAction implements Action {
 			}
 			Script.href("/soundcloud/home.jsp", response);
 		} else {
-			Script.back("ERROR! Retry login", response);
+			Script.back("ERROR!", response);
 		}
 	}
 }

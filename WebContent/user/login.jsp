@@ -35,7 +35,7 @@
 				</div>
 
 				<div class="text-center p-t-40">
-					<a class="txt2" href="./join.jsp"> Not a member? </a>
+					<a class="txt2" href="/soundcloud/users?cmd=join"> Not a member? </a>
 				</div>
 			</form>
 		</div>

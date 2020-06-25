@@ -14,7 +14,7 @@
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate="Enter your email">
-					<input id="email"class="input100" type="text" name="email" placeholder="Your email address"> <span class="focus-input100" data-placeholder="&#xf15a;"></span>
+					<input id="email" class="input100" type="text" name="email" placeholder="Your email address"> <span class="focus-input100" data-placeholder="&#xf15a;"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate="Enter your password">
@@ -34,9 +34,13 @@
 				<div class="container-kakao-form-btn p-t-15">
 					<button class="kakao-form-btn">Continue with Kakao</button>
 				</div>
+				<div class="text-center p-t-40">
+					<a class="txt2" href="/soundcloud/users?cmd=login"> I already have account </a>
+				</div>
 			</form>
 		</div>
 	</div>
 </div>
+
 
 <%@ include file="../include/mainSign/footer.jsp"%>

@@ -15,6 +15,7 @@ import com.sc.soundcloud.action.users.UsersJoinProcAction;
 import com.sc.soundcloud.action.users.UsersLoginAction;
 import com.sc.soundcloud.action.users.UsersLoginProcAction;
 import com.sc.soundcloud.action.users.UsersLogoutAction;
+import com.sc.soundcloud.action.users.UsersUsernameCheckAction;
 
 @WebServlet("/users")
 public class UsersController extends HttpServlet {
@@ -54,7 +55,9 @@ public class UsersController extends HttpServlet {
 			return new UsersLoginProcAction();
 		} else if(cmd.equals("logout")) {
 			return new UsersLogoutAction();
-		}
+		} else if(cmd.equals("usernameCheck")) {
+			return new UsersUsernameCheckAction();
+		} 
 		return null;
 	}
 

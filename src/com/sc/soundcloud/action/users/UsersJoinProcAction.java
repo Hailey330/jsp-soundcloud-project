@@ -52,7 +52,7 @@ public class UsersJoinProcAction implements Action {
 		if(result == 1) {
 			Script.href("Join Success", "/soundcloud/users?cmd=login", response);
 		} else {
-			Script.back("ERROR! Retry create account", response);
+			Script.back("ERROR!", response);
 		}
 		}
 				

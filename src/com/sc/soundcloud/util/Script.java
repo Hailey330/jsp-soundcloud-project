@@ -7,6 +7,17 @@ import javax.servlet.http.HttpServletResponse;
 
 public class Script {
 	
+	public static void outText(String msg, HttpServletResponse response) {
+		try {
+			response.setCharacterEncoding("utf-8");
+			response.setContentType("text/plain; charset=utf-8");
+			PrintWriter out = response.getWriter();	 
+			out.print(msg);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public static void href(String msg, String uri, HttpServletResponse response) {
 		try {
 			response.setCharacterEncoding("utf-8");
