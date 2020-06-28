@@ -10,10 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.sc.soundcloud.action.Action;
-import com.sc.soundcloud.action.board.BoardStreamAction;
 import com.sc.soundcloud.action.board.BoardFileUploadAction;
 import com.sc.soundcloud.action.board.BoardFileUploadProcAction;
-import com.sc.soundcloud.action.users.UsersJoinAction;
+import com.sc.soundcloud.action.board.BoardStreamAction;
+import com.sc.soundcloud.action.board.BoardWriteAction;
 
 @WebServlet("/board")
 public class BoardController extends HttpServlet {
@@ -50,6 +50,10 @@ public class BoardController extends HttpServlet {
 			return new BoardFileUploadAction();
 		} else if(cmd.equals("fileUploadProc")) {
 			return new BoardFileUploadProcAction(); 
+		} else if(cmd.equals("write")) {
+			return new BoardWriteAction(); 
+		} else if(cmd.equals("writeProc")) {
+//			return new BoardWriteProcAction(); 
 		}
 		return null;
 	}

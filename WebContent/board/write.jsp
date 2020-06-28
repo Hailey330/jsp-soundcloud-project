@@ -46,17 +46,17 @@
 		</div>
 		<nav class="offcanvas__menu mobile-menu">
 			<ul>
-				<li><a href="/soundcloud/main?cmd=home">Home</a></li>
-				<li><a href="/soundcloud/board?cmd=stream">Stream</a></li>
-				<li><a href="/soundcloud/board?cmd=library">Library</a></li>
-				<li><a href="/soundcloud/board?cmd=fileUpload">Upload</a></li>
-				<li><a href="#">YOURS</a>
+				<li class="active"><a href="./index.html">Home</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./hosting.html">Hosting</a></li>
+				<li><a href="#">Pages</a>
 					<ul class="dropdown">
-						<li><a href="/soundcloud/board?cmd=profile">Profile</a></li>
-						<li><a href="/soundcloud/board?cmd=library">Likes</a></li>
-						<li><a href="/soundcloud/board?cmd=library">Following</a></li>
-						<li><a href="/soundcloud/users?cmd=logout">Sign out</a></li>
+						<li><a href="./pricing.html">Pricing</a></li>
+						<li><a href="./blog-details.html">Blog Details</a></li>
+						<li><a href="./404.html">404</a></li>
 					</ul></li>
+				<li><a href="./blog.html">News</a></li>
+				<li><a href="./contact.html">Contact</a></li>
 			</ul>
 		</nav>
 		<div id="mobile-menu-wrap"></div>
@@ -89,14 +89,14 @@
 					<nav class="header__menu">
 						<ul>
 							<li><a href="/soundcloud/main?cmd=home">Home</a></li>
-							<li><a href="/soundcloud/board?cmd=stream">Stream</a></li>
-							<li><a href="/soundcloud/board?cmd=library">Library</a></li>
-							<li><a href="/soundcloud/board?cmd=fileUpload">Upload</a></li>
+							<li><a href="#">Stream</a></li>
+							<li><a href="#">Library</a></li>
+							<li class="active"><a href="#">Upload</a></li>
 							<li><a href="#">YOURS</a>
 								<ul class="dropdown">
-									<li><a href="/soundcloud/board?cmd=profile">Profile</a></li>
-									<li><a href="/soundcloud/board?cmd=library">Likes</a></li>
-									<li><a href="/soundcloud/board?cmd=library">Following</a></li>
+									<li><a href="#">Profile</a></li>
+									<li><a href="/soundcloud/board?cmd=Library">Likes</a></li>
+									<li><a href="/soundcloud/board?cmd=Library">Following</a></li>
 									<li><a href="/soundcloud/users?cmd=logout">Sign out</a></li>
 								</ul></li>
 						</ul>
@@ -159,8 +159,6 @@
 								<p class="uploadMain__noticeWithActiveUploads">
 									By uploading, you confirm that your sounds comply with our <a href="/terms-of-use" target="_blank">Terms of Use</a> and you don't infringe anyone else's rights.
 								</p>
-								
-								
 								<div class="l-footer sc-text-verylight standard sc-border-light-top">
 									<a class="sc-link-verylight" href="/terms-of-use" title="Terms of use">Legal</a>&nbsp;⁃ <a class="sc-link-verylight" href="/pages/privacy" title="Privacy policy">Privacy</a>&nbsp;⁃ <a
 										class="sc-link-verylight" href="/pages/cookies" title="Cookies policy">Cookies</a>&nbsp;⁃ <a class="sc-link-verylight" href="/imprint" title="Company information">Imprint</a>&nbsp;⁃ <a
@@ -168,23 +166,9 @@
 										target="_blank" title="SoundCloud blog">Blog</a>&nbsp;⁃ <a class="sc-link-verylight" href="/charts/top" title="Charts">Charts</a>&nbsp;⁃ <a class="sc-link-verylight" href="/popular/searches"
 										title="Popular searches">Popular searches</a>
 								</div>
-								
-								
 							</div>
-					<div class="detail-submit">
-								<div class="ds-image-box">
-									<img><label class="imageLabel">Upload Image<input class="h-input" type="file"></label>
-								</div>
-								<div class="track-detail-form">
-									<p class="tdf-text tdf-required">Title</p>
-									<input class="txt-input" type="text" value="">
-									<p class="tdf-text">Description</p>
-									<textarea class="txt-input txta active-ring"></textarea>
-									<input class="inputLabel" type="submit" value="create">
-								</div>
-							</div>
-					</div>
 						</div>
+					</div>
 				</form>
 			</div>
 		</div>
