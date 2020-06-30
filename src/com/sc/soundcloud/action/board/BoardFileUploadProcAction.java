@@ -67,7 +67,7 @@ public class BoardFileUploadProcAction implements Action {
 			// 5. DB 에 넣은 users.userfile 값 들고 이동
 			if (result == 1) {
 				int boardId = boardRepository.findByMaxBoardId(userId);
-				Script.href("/soundcloud/board?cmd=write&userId=" + userId + "&boardId=" + boardId, response);
+				Script.href("/soundcloud/board?cmd=write&userId=" + userId + "&boardId=" + boardId + "&userFile=" + userFile, response);
 			} else {
 				Script.back("ERROR! 다시 진행해주세요.", response);
 			}

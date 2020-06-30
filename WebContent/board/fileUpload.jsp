@@ -197,6 +197,8 @@
 	<script src="/soundcloud/deerhost/js/jquery.slicknav.js"></script>
 	<script src="/soundcloud/deerhost/js/owl.carousel.min.js"></script>
 	<script src="/soundcloud/deerhost/js/main.js"></script>
+	<script src="/soundcloud/js/fileCheck.js"></script>
+	
 
 </body>
 

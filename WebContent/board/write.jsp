@@ -119,7 +119,9 @@
 
 								<!-- 이미지 업로드 -->
 								<div class="ds-image-box">
-									<img> <label class="imageLabel">Upload Image <input class="h-input" type="file" name="musicImage" id="musicImage">
+									<img id="img__wrap"> 		
+									<label class="imageLabel">Upload Image 
+									<input class="h-input" type="file" name="musicImage" id="musicImage" required>
 									</label>
 								</div>
 
@@ -127,11 +129,10 @@
 
 								<div class="track-detail-form">
 									<p class="tdf-text tdf-required">Title</p>
-									<input class="txt-input" type="text" name="title" id="title">
+									<input class="txt-input" type="text" name="title" id="title" value="${param.userFile}" required>
 									<p class="tdf-text">Description</p>
 									<textarea class="txt-input txta active-ring" name="content" id="content"></textarea>
-									<input type="hidden" name="userId" value="${sessionScope.principal.id}" /> 
-									<input type="hidden" name="boardId" value="${param.boardId}" /> 
+									<input type="hidden" name="userId" value="${sessionScope.principal.id}" /> <input type="hidden" name="boardId" value="${param.boardId}" />
 									<input class="inputLabel" type="submit" value="create">
 								</div>
 							</div>
@@ -150,6 +151,7 @@
 	<script src="/soundcloud/deerhost/js/bootstrap.min.js"></script>
 	<script src="/soundcloud/deerhost/js/owl.carousel.min.js"></script>
 	<script src="/soundcloud/deerhost/js/main.js"></script>
+	<script src="/soundcloud/js/imgPreview.js"></script>
 
 </body>
 

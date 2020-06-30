@@ -48,7 +48,6 @@ public class BoardWriteProcAction implements Action {
 
 			userId = Integer.parseInt(multi.getParameter("userId"));
 			boardId = Integer.parseInt(multi.getParameter("boardId"));
-			System.out.println("id 값 확인 ::: " + boardId);
 			
 			String title = multi.getParameter("title");
 			String content = multi.getParameter("content");
