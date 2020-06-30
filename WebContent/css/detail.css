@@ -1,0 +1,233 @@
+.l-container {
+	padding: 0 30px;
+	width: 1180px;
+	margin: 0 auto
+}
+
+.l-container:after, .l-container:before {
+	content: "";
+	display: table
+}
+
+.l-container:after {
+	clear: both
+}
+
+.l-container.l-content {
+	padding-top: 46px
+}
+
+.m-hideHeader .l-container.l-content {
+	padding-top: 0
+}
+
+.l-container.l-fullwidth {
+	width: 1240px;
+	padding: 0
+}
+
+.l-inner-fullwidth {
+	margin-left: -30px;
+	margin-right: -30px
+}
+
+@media ( max-width :1239px) {
+	.l-container {
+		width: 1020px
+	}
+	.l-container.l-fullwidth {
+		width: 1080px
+	}
+}
+
+@media ( max-width :1079px) {
+	.l-container {
+		width: 920px;
+		padding: 0 20px
+	}
+	.l-container.l-fullwidth {
+		width: 960px
+	}
+	.l-inner-fullwidth {
+		margin-left: -20px;
+		margin-right: -20px
+	}
+}
+
+@media screen and (max-width:959px) { @
+	-ms-viewport {
+		width: 768px
+	}
+}
+
+/************ upsellBanner ***********/
+
+.upsellBanner {
+	display: none;
+	position: relative;
+	padding: 23px 30px
+}
+
+.upsellBanner.expanded {
+	display: block
+}
+
+.upsellBanner__title {
+	font-size: 18px;
+	color: #fff;
+	padding: 0 0 4px
+}
+
+.upsellBanner__copy {
+	padding-bottom: 4px
+}
+
+.upsellBanner__close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 15px;
+	height: 15px;
+	border: 0;
+	padding: 0;
+	display: block;
+	background:
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAQAAACR313BAAABC0lEQVR4AV3KMWsUURQF4O/e6RVCIgFB2EyyxYI2g4ZAkBQGrayEgZVg438SO2EhaBlQjH9AUTIIgihYCEKqFcEFW5/rvkq/4t4D5wTV6Egf+y76Wd44NgNiBNtxEpNAKCjKaXnonFyVr3OSUgr15514b5PUxNPcSAGqEHIjHoeMaXaJe/ZVN92vg7ulz+gDLOw6wKHr5tTBUcZegFc+6zxwzUcvQYgurQHhuYV1373QqKxlzFVuu+CXdQcq/MjyDrjlqg8e+eKGPZUhPQEuGZwKJz4Zqcy0zc7ZuIzLVmmXt6at1d85a5toxZV8a9P/5r93fc3g2zIM/jX8LYltVfQx1bns3FCeOQb+ANlbSmVcuz2DAAAAAElFTkSuQmCC)
+		50% no-repeat;
+	cursor: pointer
+}
+
+@media ( max-width :1079px) {
+	.upsellBanner {
+		background-image: none
+	}
+}
+
+
+/*********** fullHero **********/
+
+.fullHero {
+	position: relative;
+	height: 380px;
+	overflow: hidden;
+	background: #e5e5e5
+}
+
+.fullHero__foreground {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 30px 560px 20px 30px;
+	z-index: 10
+}
+
+.fullHero__artwork {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 1;
+	width: 340px;
+	height: 340px
+}
+
+.fullHero__info {
+	position: absolute;
+	top: 29px;
+	width: 150px;
+	right: 390px;
+	text-align: right
+}
+
+.fullHero__uploadTime {
+	color: #fff;
+	margin-bottom: 16px
+}
+
+.fullHero__title .soundTitle__usernameHeroContainer {
+	margin-right: 0
+}
+
+.fullHero__tracksSummary {
+	display: none;
+	position: absolute;
+	bottom: 20px;
+	left: 30px
+}
+
+.fullHero.m-showTracksSummary .fullHero__tracksSummary {
+	display: block
+}
+
+.fullHero__playerArea {
+	position: absolute;
+	bottom: 0;
+	left: 30px;
+	right: 390px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end
+}
+
+.fullHero__waveform {
+	margin-bottom: 30px;
+	height: 100px;
+	z-index: 1
+}
+
+.fullHero__playerConsumerSubUpsell {
+	background-color: rgba(51, 51, 51, .3);
+	margin-right: -390px;
+	padding-right: 390px;
+	margin-left: -30px;
+	padding-left: 30px
+}
+
+.fullHero__blocked {
+	margin-bottom: 20px;
+	height: 60px
+}
+
+.fullHero.m-showTracksSummary .fullHero__blocked, .fullHero.m-showTracksSummary .fullHero__waveform
+	{
+	visibility: hidden
+}
+
+.fullHero__parentLink {
+	max-width: 230px;
+	margin-top: 4px;
+	margin-left: 70px
+}
+
+@media ( max-width :1079px) {
+	.fullHero__foreground {
+		padding-left: 20px;
+		padding-right: 550px
+	}
+	.fullHero__playerArea {
+		left: 20px;
+		right: 380px
+	}
+	.fullHero__info {
+		right: 380px
+	}
+}
+
+.fullHero__tierIndicator {
+	top: 10px;
+	right: 10px
+}
+
+.fullHero__tierIndicator-plus {
+	top: 12px;
+	right: 12px
+}
+</
+style
+>

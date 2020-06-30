@@ -102,108 +102,1368 @@
 
 	<!-- Blog Section Begin -->
 	<section class="blog-section">
-		<div class="track-show-page">
-			<div class="track-show-container">
-				<div class="track-show-detail">
-					<div class="track-sd-top">
-						<div class="ts-play"></div>
-						<div class="track-sd-info">
-							<a href="/#/users/1">
-								<div class="track-sd-uploader">Diplo</div>
-							</a>
-							<div class="track-sd-title">Get It Right (Feat. Mø &amp; Goldlink) Remix</div>
-						</div>
-					</div>
-					<div class="track-sd-bott">
-						<div>
-							<div id="track-1-waveform">
-								<wave style="display: block; position: relative; user-select: none; height: 100px; overflow: auto hidden;"> <wave
-									style="position: absolute; z-index: 3; left: 0px; top: 0px; bottom: 0px; overflow: hidden; width: 0px; display: block; box-sizing: border-box; border-right: 0px solid rgb(51, 51, 51); pointer-events: none;">
-								<canvas width="671" height="100" style="position: absolute; left: 0px; top: 0px; bottom: 0px; height: 100%; width: 671px;"></canvas>
-								</wave>
-								<canvas width="671" height="100" style="position: absolute; z-index: 2; left: 0px; top: 0px; bottom: 0px; height: 100%; pointer-events: none; width: 671px;"></canvas>
-								</wave>
-								<audio preload="auto" src="https://s3.us-west-1.amazonaws.com/vibeskypro/tracks/audios/000/000/001/original/Get_It_Right_%28Feat._M%C3%B8___Goldlink%29_Remix.mp3?1530392146"
-									style="width: 100%;"></audio>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="track-show-image-container">
-					<img src="https://s3.us-west-1.amazonaws.com/vibeskypro/tracks/images/000/000/001/original/Screenshot_20180402-234123.png?1550293351">
+	
+		<!-- 전체 구성 -->
+		<div class="l-container l-content">
+			<div class="l-product-banners l-inner-fullwidth">
+				<div class="l-container">
+					<div></div>
 				</div>
 			</div>
-			<div class="track-show-container-bottom">
-				<div class="tscb-left">
-					<div class="track-show-comment-bar">
-						<div class="comment-container">
-							<div class="comment-form">
-								<form class="cform">
-									<div class="comment-form-user">
-										<img src="https://s3.us-west-1.amazonaws.com/vibeskypro/users/images/000/000/008/original/modernistic_surreal_cubism_pepe.png?1545435612">
-									</div>
-									<div class="comment-input-container">
-										<input class="comment-input" type="text" placeholder="Write a Comment" value="">
-									</div>
-									<input type="submit" class="h-input">
-								</form>
-							</div>
-							<div class="comment-buttons"></div>
-						</div>
+			<div id="content" role="main">
+				<div>
+					<div class="l-banner l-inner-fullwidth">
+
+						<div class="listenUpsell sc-type-light sc-border-box upsellBanner"></div>
 					</div>
-					<div class="button-bar">
-						<div class="controller-btn like-btn">like</div>
-					</div>
-					<div class="ts-uploader-ci">
-						<div class="ts-uc-left">
-							<div class="ts-artist-circle">
-								<a href="/#/users/1"><img src="https://s3.us-west-1.amazonaws.com/vibeskypro/users/images/000/000/001/original/diplo.jpg?1530473530"></a>
+					
+					<!-- 음악 재생 바 -->
+					<div class="l-listen-hero">
+
+						<div class="fullListenHero fullHero l-inner-fullwidth">
+							<div style="height: 100%;">
+								<div class="backgroundGradient">
+									<div class="backgroundGradient__buffer backgroundGradient__hidden"></div>
+									<div class="backgroundGradient__buffer" style="background: linear-gradient(135deg, rgb(152, 105, 130) 0%, rgb(46, 54, 66) 100%);"></div>
+									<div class="backgroundGradient__imageOverlay"></div>
+								</div>
 							</div>
-							<a href="/#/users/1"><div class="ts-artist-name">Diplo</div></a>
-							<div class="ts-follow-btn">Follow</div>
-						</div>
-						<div class="ts-uc-right">
-							<div class="ts-track-description">i found the password woot woot</div>
-							<div class="track-show-comment-index">
-								<div class="tsc-container">
-									<div class="posted-comment">
-										<a href="/#/users/4"><div class="comment-uploader-img">
-												<img src="https://s3.us-west-1.amazonaws.com/vibeskypro/users/images/000/000/004/original/beatle.png?1530473994">
-											</div></a>
-										<div class="comment-uploader-body">
-											<a href="/#/users/4"><div>The Beatles</div></a>
-											<div>Wow love it!</div>
+
+							<div class="fullHero__foreground fullListenHero__foreground">
+								<div class="fullHero__artwork">
+									<div class="listenArtworkWrapper">
+										<div class="listenArtworkWrapper__artwork">
+											<div class="image m-sound image__lightOutline readOnly customImage interactive sc-artwork sc-artwork-placeholder-0 m-loaded" tabindex="0"
+												style="height: 100%; width: 100%;">
+												<span
+													style="background-image: url(&quot;https://i1.sndcdn.com/artworks-000385909926-zwkof6-t500x500.jpg&quot;); width: 100%; height: 100%; opacity: 1;"
+													class="sc-artwork sc-artwork-placeholder-0  image__full g-opacity-transition" aria-label="Love Is Far Away" aria-role="img"></span>
+
+											</div>
 										</div>
-										<div></div>
 									</div>
-									<div class="posted-comment">
-										<a href="/#/users/5"><div class="comment-uploader-img">
-												<img src="https://s3.us-west-1.amazonaws.com/vibeskypro/users/images/000/000/005/original/MGMT_Horizontal_logo.png?1530473729">
-											</div></a>
-										<div class="comment-uploader-body">
-											<a href="/#/users/5"><div>MGMT</div></a>
-											<div>I'm literally dying because it's so good.</div>
+								</div>
+								<span class="fullHero__tierIndicator-plus g-go-plus-marker-artwork-large g-go-marker-artwork sc-hidden"></span>
+								<div class="fullHero__title">
+									<div class="soundTitle sc-clearfix sc-hyphenate listenContext">
+										<div class="soundTitle__titleContainer">
+											<div class="soundTitle__playButton soundTitle__playButtonHero ">
+												<a role="button" href="" class="sc-button-play playButton sc-button m-stretch" tabindex="0" title="Play" draggable="true">Play</a>
+											</div>
+
+											<div class="soundTitle__usernameTitleContainer">
+												<div class="soundTitle__usernameHeroContainer">
+													<a href="/kehdii2sme"
+														class="soundTitle__username g-opacity-transition-500 g-type-shrinkwrap-inline g-type-shrinkwrap-large-secondary soundTitle__usernameHero sc-type-medium">
+														Kehdii </a>
+												</div>
+												<span class="soundTitle__title sc-font g-type-shrinkwrap-inline g-type-shrinkwrap-large-primary"> <span>Love Is Far Away</span>
+												</span>
+											</div>
+											<div class="soundTitle__additionalContainer">
+												<div class="soundTitle__tagContainer">
+													<span class="sc-snippet-badge sc-selection-disabled sc-snippet-badge-medium sc-snippet-badge-grey sc-hidden"
+														aria-describedby="tooltip-29624"></span> <span
+														class="sc-snippet-badge sc-selection-disabled sc-snippet-badge-small sc-snippet-badge-grey sc-hidden" aria-describedby="tooltip-29627"></span>
+												</div>
+											</div>
 										</div>
-										<div></div>
 									</div>
-									
-										<div></div>
+
+								</div>
+
+								<div class="fullHero__info">
+									<div class="fullHero__uploadTime sc-type-medium">
+										<time class="relativeTime" title="8 August 2018" datetime="2018-08-08T08:38:46.000Z">
+											<span class="sc-visuallyhidden">1 year ago</span><span aria-hidden="true">1 year ago</span>
+										</time>
+									</div>
+									<a rel="nofollow" class="sc-tag" href="/tags/city"><span class="sc-truncate sc-type-medium" style="max-width: 120px">City</span></a>
+								</div>
+
+
+								<div class="fullHero__playerArea">
+									<div class="fullHero__waveform">
+										<div class="waveformWrapper">
+											<div class="waveformWrapper__waveform">
+												<div class="waveform loaded">
+													<div class="waveform__layer waveform__scene">
+														<canvas aria-hidden="true" class="g-box-full sceneLayer" width="660" height="100"></canvas>
+														<canvas aria-hidden="true" class="g-box-full sceneLayer waveformCommentsNode loaded" width="660" height="100"></canvas>
+														<canvas aria-hidden="true" class="g-box-full sceneLayer" width="660" height="100"></canvas>
+													</div>
+													<div class="commentPlaceholder g-z-index-content">
+														<div class="commentPlaceholder__avatar">
+															<span style="background-image: url(https://i1.sndcdn.com/avatars-000334380658-j9enab-t20x20.jpg); width: 20px; height: 20px;"
+																class="sc-artwork sc-artwork-placeholder-5  " aria-label="민경’s avatar" aria-role="img" aria-hidden="true"></span>
+														</div>
+													</div>
+													<div class="commentPopover medium">
+														<div class="commentPopover__scrub">
+															<div class="commentPopover__playableArea" style="width: 100%"></div>
+														</div>
+
+														<div class="commentPopover__wrapper g-opacity-transition">
+															<div class="commentPopover__avatar sc-artwork" style="width: 20px; height: 20px;"></div>
+															<a class="commentPopover__username sc-truncate" href=""></a>
+															<p class="commentPopover__body sc-truncate"></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="tscb-sidebar">
-					<div class="ad-container">
-						<a href="https://github.com/Mpompili" target="_blank"><img src="https://res.cloudinary.com/mpompili/image/upload/v1526013412/gotogithub.jpg"></a>
+					<div class="l-listen-wrapper">
+						<div class="l-about-main">
+							<div class="l-about-rows">
+								<div class="l-about-row">
+									<div class="l-about-top">
+
+										<div class="listenEngagement sc-clearfix">
+											<div class="listenEngagement__commentForm">
+												<div class="commentForm commentForm__transition m-large visible">
+													<div class="commentForm__wrapper commentForm__transition">
+														<div class="commentForm__avatar">
+															<span style="background-image: url(https://i1.sndcdn.com/avatars-000334380658-j9enab-t50x50.jpg); width: 40px; height: 40px;"
+																class="sc-artwork sc-artwork-placeholder-5  " aria-label="민경’s avatar" aria-role="img"></span>
+														</div>
+														<div class="commentForm__inputWrapper">
+															<input type="text" class="commentForm__input" id="tokenInput__comment" autocomplete="off" placeholder="Write a comment"
+																aria-invalid="false" aria-describedby="">
+															<div class="commentInput__validation g-input-validation g-input-validation-hidden" id=""></div>
+
+														</div>
+													</div>
+													<div class="commentForm__inputMessage g-input-validation g-input-validation-hidden">Comment must not exceed 1000 characters</div>
+												</div>
+											</div>
+
+											<div class="listenEngagement__footer">
+												<div class="soundActions sc-button-toolbar listenEngagement__actions soundActions__medium">
+													<div class="sc-button-group sc-button-group-medium">
+														<button type="button" class="sc-button-like sc-button sc-button-medium sc-button-responsive" aria-describedby="tooltip-29642"
+															tabindex="0" title="Like" aria-label="Like">Like</button>
+														<button type="button" class="sc-button-repost sc-button sc-button-medium sc-button-responsive" aria-describedby="tooltip-29644"
+															tabindex="0" aria-haspopup="true" role="button" aria-owns="dropdown-button-29645" title="Repost" aria-label="Repost">Repost</button>
+														<button type="button" class="sc-button-share sc-button sc-button-medium sc-button-responsive" aria-describedby="tooltip-29647"
+															tabindex="0" aria-haspopup="true" role="button" aria-owns="dropdown-button-29648" title="Share" aria-label="Share">Share</button>
+														<button type="button" class="sc-button-queue addToNextUp sc-button sc-button-medium sc-button-responsive"
+															aria-describedby="tooltip-29650" tabindex="0" title="Add to Next up" aria-label="Add to Next up">
+															<span class="sc-button-alt-labels"><span class="sc-button-label-default">Add to Next up</span><span
+																class="sc-button-label-hover">Add to Next up</span><span class="sc-button-label-alt">Add to Next up</span><span
+																class="sc-button-label-alt">Added</span></span>
+														</button>
+														<button type="button" class="sc-button-more sc-button sc-button-medium sc-button-responsive" tabindex="0" aria-haspopup="true"
+															role="button" aria-owns="dropdown-button-29652" title="More" aria-label="More">More</button>
+													</div>
+
+
+												</div>
+												<ul class="soundStats sc-ministats-group listenEngagement__stats sc-ministats-group-right" aria-label="Track stats">
+													<li title="34,416 plays" class="sc-ministats-item"><span class="sc-ministats sc-ministats-medium sc-ministats-plays"> <span
+															class="sc-visuallyhidden">34,416 plays</span><span aria-hidden="true">34.4K</span>
+													</span></li>
+
+													<li title="991 likes" class="sc-ministats-item"><a href="/kehdii2sme/kehdii-love-is-far-away/likes" rel="nofollow"
+														class="sc-ministats sc-ministats-medium sc-ministats-likes"> <span class="sc-visuallyhidden">View all likes</span><span
+															aria-hidden="true">991</span>
+													</a></li>
+
+													<li title="36 reposts" class="sc-ministats-item"><a href="/kehdii2sme/kehdii-love-is-far-away/reposts" rel="nofollow"
+														class="sc-ministats sc-ministats-medium sc-ministats-reposts"> <span class="sc-visuallyhidden">View all reposts</span><span
+															aria-hidden="true">36</span>
+													</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="l-about-row l-listen__mainContent">
+									<div class="l-about-left">
+
+										<div class="listenArtistInfo">
+											<div class="userBadge m-vertical">
+												<div class="userBadge__avatar" style="width: 120px; height: 120px;">
+													<div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/kehdii2sme" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-0 image__rounded m-loaded"
+																		style="height: 100%; width: 100%;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000738354154-sqcssu-t120x120.jpg&quot;); width: 100%; height: 100%; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-0 image__rounded image__full g-opacity-transition" aria-label="Kehdii’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<div class="userBadge__content sc-media-content">
+													<div class="userBadge__title">
+														<h3 class="userBadge__username sc-type-light">
+															<a href="/kehdii2sme" title="Visit Kehdii’s profile" class="userBadge__usernameLink sc-link-dark sc-truncate"> <span
+																class="sc-truncate">Kehdii</span>
+															</a> <span></span>
+														</h3>
+													</div>
+													<div class="userBadge__meta">
+														<div class="userBadge__stats">
+															<div aria-label="User stats" class="userStats">
+																<ul class="sc-ministats-group">
+																	<li title="136 followers" class="sc-ministats-item"><a href="/kehdii2sme/followers" rel="nofollow"
+																		class="sc-ministats sc-ministats-small sc-ministats-followers"> <span class="sc-visuallyhidden">136 followers</span><span
+																			aria-hidden="true">136</span>
+																	</a></li>
+																	<li title="6 tracks" class="sc-ministats-item"><a href="/kehdii2sme/tracks" rel="nofollow"
+																		class="sc-ministats sc-ministats-small sc-ministats-sounds"> <span class="sc-visuallyhidden">6 tracks</span><span
+																			aria-hidden="true">6</span>
+																	</a></li>
+																</ul>
+															</div>
+														</div>
+
+														<div class="userBadge__actions">
+															<button type="button" class="sc-button-follow sc-button sc-button-small sc-button-responsive sc-button-cta" tabindex="0" title="Follow"
+																aria-label="Follow">Follow</button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="listenArtistInfo__copyright">
+												<a type="button" class="reportCopyright g-link-problem sc-button sc-button-small sc-button-responsive sc-link-medium" tabindex="0"><span
+													class="reportCopyright__full">Report</span></a>
+											</div>
+										</div>
+									</div>
+									<div class="l-about-right">
+
+										<div class="listenDetails">
+
+
+
+											<div class="listenDetails__partialInfo">
+												<div class="truncatedAudioInfo m-collapsed">
+													<div class="truncatedAudioInfo__wrapper" style="max-height: 140px;">
+														<div class="truncatedAudioInfo__content">
+															<div class="soundTags">
+																<div class="sc-tag-group">
+																	<a href="/tags/kpop" class="sc-tag sc-tag-medium"><span class="sc-truncate">kpop</span></a> <a href="/tags/boyrec"
+																		class="sc-tag sc-tag-medium"><span class="sc-truncate">boyrec</span></a> <a href="/tags/gopyol" class="sc-tag sc-tag-medium"><span
+																		class="sc-truncate">gopyol</span></a> <a href="/tags/yubin" class="sc-tag sc-tag-medium"><span class="sc-truncate">yubin</span></a> <a
+																		href="/tags/kehdii" class="sc-tag sc-tag-medium"><span class="sc-truncate">kehdii</span></a> <a href="/tags/citypop"
+																		class="sc-tag sc-tag-medium"><span class="sc-truncate">citypop</span></a> <a href="/tags/%EC%8B%9C%ED%8B%B0%ED%8C%9D"
+																		class="sc-tag sc-tag-medium"><span class="sc-truncate">시티팝</span></a> <a href="/tags/%EC%94%A8%ED%8B%B0%ED%8C%9D"
+																		class="sc-tag sc-tag-medium"><span class="sc-truncate">씨티팝</span></a> <a href="/tags/%EC%BC%80%EC%9D%B4%ED%8C%9D"
+																		class="sc-tag sc-tag-medium"><span class="sc-truncate">케이팝</span></a> <a href="/tags/%EB%B3%B4%EC%9D%B4%EB%A0%89"
+																		class="sc-tag sc-tag-medium"><span class="sc-truncate">보이렉</span></a> <a href="/tags/%EC%9C%A4%EA%B0%91%EC%97%B4"
+																		class="sc-tag sc-tag-medium"><span class="sc-truncate">윤갑열</span></a>
+																</div>
+															</div>
+
+															<div class="truncatedAudioInfo__metadata">
+																<div class="listenInfo">
+																	<div></div>
+																</div>
+															</div>
+
+															<div class="truncatedAudioInfo__license">
+																<div class="license sc-type-light"></div>
+															</div>
+														</div>
+													</div>
+													<p>
+														<a class="truncatedAudioInfo__collapse sc-link-light g-link-collapse collapsed" href="#">Show more</a>
+													</p>
+												</div>
+											</div>
+
+
+											<div class="commentsList g-box-full lazyLoadingList">
+												<div class="sc-clearfix sc-type-light sc-border-light-bottom">
+													<h3 class="commentsList__title sc-type-light">
+														<span class="sc-icon sc-icon-comment sc-icon-large commentsList__icon"></span> <span class="commentsList__actualTitle">14
+															comments</span>
+													</h3>
+												</div>
+												<ul class="lazyLoadingList__list sc-list-nostyle sc-clearfix">
+													<li class="commentsList__item"><div class="commentItem">
+															<div class="commentItem__read">
+																<a class="commentItem__avatar" href="/1-10-15">
+																	<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-1 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000817944493-h1vq3t-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-1 image__rounded image__full g-opacity-transition" aria-label="1학년 10반 15번이서연’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</a>
+																<div class="commentItem__content">
+																	<span class="commentItem__username sc-text-light"> <a href="/1-10-15" title="Visit 1학년 10반 15번이서연’s profile"
+																		class="commentItem__usernameLink sc-link-light">1학년 10반 15번이서연</a> <span class="sc-text-verylight commentItem__timestamp">at
+																			<a href="" aria-role="button" class="commentItem__timestampLink sc-link-light" title="Play from 0:18">0:18</a>:
+																	</span>
+																	</span>
+																	<div class="commentItem__body sc-hyphenate">
+																		<span><p>사랑해요</p></span>
+																	</div>
+																</div>
+																<div class="commentItem__meta">
+																	<span class="commentItem__createdAt sc-text-light"><time class="relativeTime" title="Posted on 27 May 2020"
+																			datetime="2020-05-27T01:42:35.000Z">
+																			<span class="sc-visuallyhidden">Posted 1 month ago</span><span aria-hidden="true">1 month ago</span>
+																		</time></span>
+																	<div class="commentItem__controls">
+																		<a href="/kehdii2sme/kehdii-love-is-far-away/comments/993850459"
+																			class="sc-button sc-button-responsive sc-button-reply sc-button-small commentItem__replyButton" rel="nofollow" title="Reply"
+																			aria-role="button">Reply</a>
+																	</div>
+																</div>
+															</div>
+														</div></li>
+													<li class="commentsList__item"><div class="commentItem">
+															<div class="commentItem__read">
+																<a class="commentItem__avatar" href="/aha-pam">
+																	<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-1 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000724255744-wm6dnc-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-1 image__rounded image__full g-opacity-transition" aria-label="Aha._. pam’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</a>
+																<div class="commentItem__content">
+																	<span class="commentItem__username sc-text-light"> <a href="/aha-pam" title="Visit Aha._. pam’s profile"
+																		class="commentItem__usernameLink sc-link-light">Aha._. pam</a> <span class="sc-text-verylight commentItem__timestamp">at <a
+																			href="" aria-role="button" class="commentItem__timestampLink sc-link-light" title="Play from 0:59">0:59</a>:
+																	</span>
+																	</span>
+																	<div class="commentItem__body sc-hyphenate">
+																		<span><p>good</p></span>
+																	</div>
+																</div>
+																<div class="commentItem__meta">
+																	<span class="commentItem__createdAt sc-text-light"><time class="relativeTime" title="Posted on 25 March 2020"
+																			datetime="2020-03-24T17:08:56.000Z">
+																			<span class="sc-visuallyhidden">Posted 3 months ago</span><span aria-hidden="true">3 months ago</span>
+																		</time></span>
+																	<div class="commentItem__controls">
+																		<a href="/kehdii2sme/kehdii-love-is-far-away/comments/923497909"
+																			class="sc-button sc-button-responsive sc-button-reply sc-button-small commentItem__replyButton" rel="nofollow" title="Reply"
+																			aria-role="button">Reply</a>
+																	</div>
+																</div>
+															</div>
+														</div></li>
+													<li class="commentsList__item"><div class="commentItem">
+															<div class="commentItem__read">
+																<a class="commentItem__avatar" href="/zero0db">
+																	<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-10 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000757062151-gaxtx2-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-10 image__rounded image__full g-opacity-transition" aria-label="LoveViolet’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</a>
+																<div class="commentItem__content">
+																	<span class="commentItem__username sc-text-light"> <a href="/zero0db" title="Visit LoveViolet’s profile"
+																		class="commentItem__usernameLink sc-link-light">LoveViolet</a> <span class="sc-text-verylight commentItem__timestamp">at <a
+																			href="" aria-role="button" class="commentItem__timestampLink sc-link-light" title="Play from 2:00">2:00</a>:
+																	</span>
+																	</span>
+																	<div class="commentItem__body sc-hyphenate">
+																		<span><p>잘들었습니다.</p></span>
+																	</div>
+																</div>
+																<div class="commentItem__meta">
+																	<span class="commentItem__createdAt sc-text-light"><time class="relativeTime" title="Posted on 19 January 2020"
+																			datetime="2020-01-18T15:50:33.000Z">
+																			<span class="sc-visuallyhidden">Posted 5 months ago</span><span aria-hidden="true">5 months ago</span>
+																		</time></span>
+																	<div class="commentItem__controls">
+																		<a href="/kehdii2sme/kehdii-love-is-far-away/comments/859140874"
+																			class="sc-button sc-button-responsive sc-button-reply sc-button-small commentItem__replyButton" rel="nofollow" title="Reply"
+																			aria-role="button">Reply</a>
+																	</div>
+																</div>
+															</div>
+														</div></li>
+													<li class="commentsList__item"><div class="commentItem">
+															<div class="commentItem__read">
+																<a class="commentItem__avatar" href="/user-598137335">
+																	<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-0 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-t2uH47WsFhu4JHE6-PiQBkg-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-0 image__rounded image__full g-opacity-transition" aria-label="민식케이’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</a>
+																<div class="commentItem__content">
+																	<span class="commentItem__username sc-text-light"> <a href="/user-598137335" title="Visit 민식케이’s profile"
+																		class="commentItem__usernameLink sc-link-light">민식케이</a> <span class="sc-text-verylight commentItem__timestamp">at <a href=""
+																			aria-role="button" class="commentItem__timestampLink sc-link-light" title="Play from 0:01">0:01</a>:
+																	</span>
+																	</span>
+																	<div class="commentItem__body sc-hyphenate">
+																		<span><p>좋아요 ㅠㅠㅠ</p></span>
+																	</div>
+																</div>
+																<div class="commentItem__meta">
+																	<span class="commentItem__createdAt sc-text-light"><time class="relativeTime" title="Posted on 15 October 2019"
+																			datetime="2019-10-15T07:43:48.000Z">
+																			<span class="sc-visuallyhidden">Posted 8 months ago</span><span aria-hidden="true">8 months ago</span>
+																		</time></span>
+																	<div class="commentItem__controls">
+																		<a href="/kehdii2sme/kehdii-love-is-far-away/comments/773797480"
+																			class="sc-button sc-button-responsive sc-button-reply sc-button-small commentItem__replyButton" rel="nofollow" title="Reply"
+																			aria-role="button">Reply</a>
+																	</div>
+																</div>
+															</div>
+														</div></li>
+													<li class="commentsList__item"><div class="commentItem">
+															<div class="commentItem__read">
+																<a class="commentItem__avatar" href="/user-793827250">
+																	<div class="image m-user image__lightOutline readOnly" style="height: 40px; width: 40px;">
+																		<span style="width: 40px; height: 40px;" class="sc-artwork sc-artwork-placeholder-0 image__rounded image__full"
+																			aria-label="User 793827250’s avatar" aria-role="img"></span>
+
+																	</div>
+																</a>
+																<div class="commentItem__content">
+																	<span class="commentItem__username sc-text-light"> <a href="/user-793827250" title="Visit User 793827250’s profile"
+																		class="commentItem__usernameLink sc-link-light">User 793827250</a> <span class="sc-text-verylight commentItem__timestamp">at
+																			<a href="" aria-role="button" class="commentItem__timestampLink sc-link-light" title="Play from 0:06">0:06</a>:
+																	</span>
+																	</span>
+																	<div class="commentItem__body sc-hyphenate">
+																		<span><p>사랑합니다</p></span>
+																	</div>
+																</div>
+																<div class="commentItem__meta">
+																	<span class="commentItem__createdAt sc-text-light"><time class="relativeTime" title="Posted on 30 September 2019"
+																			datetime="2019-09-30T14:02:38.000Z">
+																			<span class="sc-visuallyhidden">Posted 9 months ago</span><span aria-hidden="true">9 months ago</span>
+																		</time></span>
+																	<div class="commentItem__controls">
+																		<a href="/kehdii2sme/kehdii-love-is-far-away/comments/761787313"
+																			class="sc-button sc-button-responsive sc-button-reply sc-button-small commentItem__replyButton" rel="nofollow" title="Reply"
+																			aria-role="button">Reply</a>
+																	</div>
+																</div>
+															</div>
+														</div></li>
+													<li class="commentsList__item"><div class="commentItem">
+															<div class="commentItem__read">
+																<a class="commentItem__avatar" href="/0jcgusffug7r">
+																	<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-6 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000434710566-f13sf7-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-6 image__rounded image__full g-opacity-transition" aria-label="김선아’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</a>
+																<div class="commentItem__content">
+																	<span class="commentItem__username sc-text-light"> <a href="/0jcgusffug7r" title="Visit 김선아’s profile"
+																		class="commentItem__usernameLink sc-link-light">김선아</a> <span class="sc-text-verylight commentItem__timestamp">at <a href=""
+																			aria-role="button" class="commentItem__timestampLink sc-link-light" title="Play from 1:32">1:32</a>:
+																	</span>
+																	</span>
+																	<div class="commentItem__body sc-hyphenate">
+																		<span><p>음악이 너무 좋아요! 음원은 어디서 받을 수 있나요?? 음원사이트에 안보이네요ㅜ</p></span>
+																	</div>
+																</div>
+																<div class="commentItem__meta">
+																	<span class="commentItem__createdAt sc-text-light"><time class="relativeTime" title="Posted on 20 August 2019"
+																			datetime="2019-08-20T14:15:04.000Z">
+																			<span class="sc-visuallyhidden">Posted 10 months ago</span><span aria-hidden="true">10 months ago</span>
+																		</time></span>
+																	<div class="commentItem__controls">
+																		<a href="/kehdii2sme/kehdii-love-is-far-away/comments/729353978"
+																			class="sc-button sc-button-responsive sc-button-reply sc-button-small commentItem__replyButton" rel="nofollow" title="Reply"
+																			aria-role="button">Reply</a>
+																	</div>
+																</div>
+															</div>
+														</div></li>
+													<li class="commentsList__item"><div class="commentItem">
+															<div class="commentItem__read">
+																<a class="commentItem__avatar" href="/sujibanker">
+																	<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-8 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000333478610-b5f5wa-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-8 image__rounded image__full g-opacity-transition" aria-label="sujibanker’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</a>
+																<div class="commentItem__content">
+																	<span class="commentItem__username sc-text-light"> <a href="/sujibanker" title="Visit sujibanker’s profile"
+																		class="commentItem__usernameLink sc-link-light">sujibanker</a> <span class="sc-text-verylight commentItem__timestamp">at <a
+																			href="" aria-role="button" class="commentItem__timestampLink sc-link-light" title="Play from 0:04">0:04</a>:
+																	</span>
+																	</span>
+																	<div class="commentItem__body sc-hyphenate">
+																		<span><p>정말..최고...</p></span>
+																	</div>
+																</div>
+																<div class="commentItem__meta">
+																	<span class="commentItem__createdAt sc-text-light"><time class="relativeTime" title="Posted on 25 July 2019"
+																			datetime="2019-07-24T19:22:43.000Z">
+																			<span class="sc-visuallyhidden">Posted 11 months ago</span><span aria-hidden="true">11 months ago</span>
+																		</time></span>
+																	<div class="commentItem__controls">
+																		<a href="/kehdii2sme/kehdii-love-is-far-away/comments/706725536"
+																			class="sc-button sc-button-responsive sc-button-reply sc-button-small commentItem__replyButton" rel="nofollow" title="Reply"
+																			aria-role="button">Reply</a>
+																	</div>
+																</div>
+															</div>
+														</div></li>
+													<li class="commentsList__item"><div class="commentItem">
+															<div class="commentItem__read">
+																<a class="commentItem__avatar" href="/aucdfarclsf9">
+																	<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-0 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-abP739b5M9Wyz1mM-Th3hsA-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-0 image__rounded image__full g-opacity-transition" aria-label="🍑’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</a>
+																<div class="commentItem__content">
+																	<span class="commentItem__username sc-text-light"> <a href="/aucdfarclsf9" title="Visit 🍑’s profile"
+																		class="commentItem__usernameLink sc-link-light">🍑</a> <span class="sc-text-verylight commentItem__timestamp">at <a href=""
+																			aria-role="button" class="commentItem__timestampLink sc-link-light" title="Play from 1:25">1:25</a>:
+																	</span>
+																	</span>
+																	<div class="commentItem__body sc-hyphenate">
+																		<span><p>목소리가 너무 좋아요♡</p></span>
+																	</div>
+																</div>
+																<div class="commentItem__meta">
+																	<span class="commentItem__createdAt sc-text-light"><time class="relativeTime" title="Posted on 14 July 2019"
+																			datetime="2019-07-14T05:11:18.000Z">
+																			<span class="sc-visuallyhidden">Posted 11 months ago</span><span aria-hidden="true">11 months ago</span>
+																		</time></span>
+																	<div class="commentItem__controls">
+																		<a href="/kehdii2sme/kehdii-love-is-far-away/comments/697828808"
+																			class="sc-button sc-button-responsive sc-button-reply sc-button-small commentItem__replyButton" rel="nofollow" title="Reply"
+																			aria-role="button">Reply</a>
+																	</div>
+																</div>
+															</div>
+														</div></li>
+													<li class="commentsList__item"><div class="commentItem">
+															<div class="commentItem__read">
+																<a class="commentItem__avatar" href="/hj-shin-560061023">
+																	<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-7 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000232459262-4p0fxz-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-7 image__rounded image__full g-opacity-transition" aria-label="Hj Shin’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</a>
+																<div class="commentItem__content">
+																	<span class="commentItem__username sc-text-light"> <a href="/hj-shin-560061023" title="Visit Hj Shin’s profile"
+																		class="commentItem__usernameLink sc-link-light">Hj Shin</a> <span class="sc-text-verylight commentItem__timestamp">at <a
+																			href="" aria-role="button" class="commentItem__timestampLink sc-link-light" title="Play from 0:02">0:02</a>:
+																	</span>
+																	</span>
+																	<div class="commentItem__body sc-hyphenate">
+																		<span><p>Amazing</p></span>
+																	</div>
+																</div>
+																<div class="commentItem__meta">
+																	<span class="commentItem__createdAt sc-text-light"><time class="relativeTime" title="Posted on 17 June 2019"
+																			datetime="2019-06-16T16:03:55.000Z">
+																			<span class="sc-visuallyhidden">Posted 1 year ago</span><span aria-hidden="true">1 year ago</span>
+																		</time></span>
+																	<div class="commentItem__controls">
+																		<a href="/kehdii2sme/kehdii-love-is-far-away/comments/676333059"
+																			class="sc-button sc-button-responsive sc-button-reply sc-button-small commentItem__replyButton" rel="nofollow" title="Reply"
+																			aria-role="button">Reply</a>
+																	</div>
+																</div>
+															</div>
+														</div></li>
+													<li class="commentsList__item"><div class="commentItem">
+															<div class="commentItem__read">
+																<a class="commentItem__avatar" href="/min-ji-lee-40254328">
+																	<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-3 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-KueqtBNDUq651sl7-9pn9lw-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-3 image__rounded image__full g-opacity-transition" aria-label="Min Ji Lee’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</a>
+																<div class="commentItem__content">
+																	<span class="commentItem__username sc-text-light"> <a href="/min-ji-lee-40254328" title="Visit Min Ji Lee’s profile"
+																		class="commentItem__usernameLink sc-link-light">Min Ji Lee</a> <span class="sc-text-verylight commentItem__timestamp">at <a
+																			href="" aria-role="button" class="commentItem__timestampLink sc-link-light" title="Play from 0:04">0:04</a>:
+																	</span>
+																	</span>
+																	<div class="commentItem__body sc-hyphenate">
+																		<span><p>사랑합니다 ❤️❤️❤️❤️</p></span>
+																	</div>
+																</div>
+																<div class="commentItem__meta">
+																	<span class="commentItem__createdAt sc-text-light"><time class="relativeTime" title="Posted on 17 June 2019"
+																			datetime="2019-06-16T15:45:07.000Z">
+																			<span class="sc-visuallyhidden">Posted 1 year ago</span><span aria-hidden="true">1 year ago</span>
+																		</time></span>
+																	<div class="commentItem__controls">
+																		<a href="/kehdii2sme/kehdii-love-is-far-away/comments/676318803"
+																			class="sc-button sc-button-responsive sc-button-reply sc-button-small commentItem__replyButton" rel="nofollow" title="Reply"
+																			aria-role="button">Reply</a>
+																	</div>
+																</div>
+															</div>
+														</div></li>
+												</ul>
+												<div class="loading regular m-padded"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="l-sidebar-right">
+
+							<div class="listenNetworkSidebar">
+								<article class="dashbox"></article>
+
+
+								<article class="sidebarModule g-all-transitions-200-linear relatedSoundsModule" style="display: block;">
+									<a class="sidebarHeader g-flex-row-centered-spread sc-link-light  sc-border-light-bottom" rel="nofollow"
+										href="/kehdii2sme/kehdii-love-is-far-away/recommended">
+										<h3 class="sidebarHeader__title sc-type-light sc-font g-flex-row-centered ">
+											<span class="sc-icon sc-icon-sound sc-icon-large sidebarHeader__icon"></span> <span class="sidebarHeader__actualTitle">Related
+												tracks</span>
+										</h3> <span class="sidebarHeader__more sc-type-h3">View all</span>
+									</a>
+									<div class="sidebarContent" style="min-height: 210.60000000000002px;">
+										<div class="soundBadgeList compact lazyLoadingList">
+											<ul class="sc-list-nostyle sc-clearfix">
+												<li class="soundBadgeList__item"><div class="soundBadge compact sc-media">
+														<span class="soundBadge__artwork sc-media-image">
+															<div class="image m-sound image__lightOutline readOnly sc-artwork sc-artwork-placeholder-6 m-loaded" style="height: 50px; width: 50px;">
+																<span
+																	style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000606494013-be3lll-t50x50.jpg&quot;); width: 50px; height: 50px; opacity: 1;"
+																	class="sc-artwork sc-artwork-placeholder-6  image__full g-opacity-transition" aria-label="김아름 - 선" aria-role="img"></span>
+
+															</div> <span class="soundBadge__tierIndicator g-go-plus-marker-artwork-small g-go-marker-artwork sc-hidden"></span> <span
+															class="soundBadge__playButton"> <a role="button" href="" class="sc-button-play playButton sc-button sc-button-large"
+																tabindex="0" title="Play" draggable="true">Play</a>
+														</span>
+														</span>
+														<div class="sc-media-content soundBadge__content">
+															<div class="soundTitle sc-clearfix sc-hyphenate sc-type-h3">
+																<div class="soundTitle__titleContainer">
+
+																	<div class="soundTitle__usernameTitleContainer">
+																		<div class="sc-type-light soundTitle__secondary  sc-truncate">
+																			<a href="/hivicus" class="soundTitle__username
+              sc-link-light
+            "> <span
+																				class="soundTitle__usernameText">hivicus</span>
+																			</a>
+																		</div>
+																		<a class="soundTitle__title sc-link-dark" href="/hivicus/8vhov70l8cjo" title="김아름 - 선"> <span class="sc-truncate">김아름 - 선</span>
+																		</a>
+																	</div>
+																	<div class="soundTitle__additionalContainer"></div>
+																</div>
+															</div>
+
+															<ul class="soundStats sc-ministats-group" aria-label="Track stats">
+																<li title="87,066 plays" class="sc-ministats-item"><span class="sc-ministats sc-ministats-small sc-ministats-plays"> <span
+																		class="sc-visuallyhidden">87,066 plays</span><span aria-hidden="true">87K</span>
+																</span></li>
+
+																<li title="1,890 likes" class="sc-ministats-item"><a href="/hivicus/8vhov70l8cjo/likes" rel="nofollow"
+																	class="sc-ministats sc-ministats-small sc-ministats-likes"> <span class="sc-visuallyhidden">View all likes</span><span
+																		aria-hidden="true">1,890</span>
+																</a></li>
+
+																<li title="38 reposts" class="sc-ministats-item"><a href="/hivicus/8vhov70l8cjo/reposts" rel="nofollow"
+																	class="sc-ministats sc-ministats-small sc-ministats-reposts"> <span class="sc-visuallyhidden">View all reposts</span><span
+																		aria-hidden="true">38</span>
+																</a></li>
+																<li title="27 comments" class="sc-ministats-item"><a href="/hivicus/8vhov70l8cjo/comments" rel="nofollow"
+																	class="sc-ministats sc-ministats-small sc-ministats-comments"> <span class="sc-visuallyhidden">View all comments</span><span
+																		aria-hidden="true">27</span>
+																</a></li>
+															</ul>
+
+															<div class="soundBadge__additional">
+																<div class="soundBadge__actions">
+																	<div class="soundActions sc-button-toolbar soundActions__small">
+																		<div class="sc-button-group sc-button-group-small">
+																			<button type="button" class="sc-button-like sc-button sc-button-small sc-button-icon sc-button-responsive"
+																				aria-describedby="tooltip-29830" tabindex="0" title="Like" aria-label="Like">Like</button>
+																			<button type="button" class="sc-button-more sc-button sc-button-small sc-button-icon sc-button-responsive" tabindex="0"
+																				aria-haspopup="true" role="button" aria-owns="dropdown-button-29832" title="More" aria-label="More">More</button>
+																		</div>
+
+
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div></li>
+												<li class="soundBadgeList__item"><div class="soundBadge compact sc-media">
+														<span class="soundBadge__artwork sc-media-image">
+															<div class="image m-sound image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-9 m-loaded"
+																style="height: 50px; width: 50px;">
+																<span
+																	style="background-image: url(&quot;https://i1.sndcdn.com/artworks-000534464946-wkdmh9-t50x50.jpg&quot;); width: 50px; height: 50px; opacity: 1;"
+																	class="sc-artwork sc-artwork-placeholder-9  image__full g-opacity-transition" aria-label="Drive To 1980 Love" aria-role="img"></span>
+
+															</div> <span class="soundBadge__tierIndicator g-go-plus-marker-artwork-small g-go-marker-artwork sc-hidden"></span> <span
+															class="soundBadge__playButton"> <a role="button" href="" class="sc-button-play playButton sc-button sc-button-large"
+																tabindex="0" title="Play" draggable="true">Play</a>
+														</span>
+														</span>
+														<div class="sc-media-content soundBadge__content">
+															<div class="soundTitle sc-clearfix sc-hyphenate sc-type-h3">
+																<div class="soundTitle__titleContainer">
+
+																	<div class="soundTitle__usernameTitleContainer">
+																		<div class="sc-type-light soundTitle__secondary  sc-truncate">
+																			<a href="/jane_pop" class="soundTitle__username
+              sc-link-light
+            "> <span
+																				class="soundTitle__usernameText">Jane POP</span>
+																			</a>
+																		</div>
+																		<a class="soundTitle__title sc-link-dark" href="/jane_pop/drive-to-1980-love" title="Drive To 1980 Love"> <span
+																			class="sc-truncate">Drive To 1980 Love</span>
+																		</a>
+																	</div>
+																	<div class="soundTitle__additionalContainer"></div>
+																</div>
+															</div>
+
+															<ul class="soundStats sc-ministats-group" aria-label="Track stats">
+																<li title="38,388 plays" class="sc-ministats-item"><span class="sc-ministats sc-ministats-small sc-ministats-plays"> <span
+																		class="sc-visuallyhidden">38,388 plays</span><span aria-hidden="true">38.3K</span>
+																</span></li>
+
+																<li title="1,112 likes" class="sc-ministats-item"><a href="/jane_pop/drive-to-1980-love/likes" rel="nofollow"
+																	class="sc-ministats sc-ministats-small sc-ministats-likes"> <span class="sc-visuallyhidden">View all likes</span><span
+																		aria-hidden="true">1,112</span>
+																</a></li>
+
+																<li title="32 reposts" class="sc-ministats-item"><a href="/jane_pop/drive-to-1980-love/reposts" rel="nofollow"
+																	class="sc-ministats sc-ministats-small sc-ministats-reposts"> <span class="sc-visuallyhidden">View all reposts</span><span
+																		aria-hidden="true">32</span>
+																</a></li>
+																<li title="29 comments" class="sc-ministats-item"><a href="/jane_pop/drive-to-1980-love/comments" rel="nofollow"
+																	class="sc-ministats sc-ministats-small sc-ministats-comments"> <span class="sc-visuallyhidden">View all comments</span><span
+																		aria-hidden="true">29</span>
+																</a></li>
+															</ul>
+
+															<div class="soundBadge__additional">
+																<div class="soundBadge__actions">
+																	<div class="soundActions sc-button-toolbar soundActions__small">
+																		<div class="sc-button-group sc-button-group-small">
+																			<button type="button" class="sc-button-like sc-button sc-button-small sc-button-icon sc-button-responsive"
+																				aria-describedby="tooltip-29842" tabindex="0" title="Like" aria-label="Like">Like</button>
+																			<button type="button" class="sc-button-more sc-button sc-button-small sc-button-icon sc-button-responsive" tabindex="0"
+																				aria-haspopup="true" role="button" aria-owns="dropdown-button-29844" title="More" aria-label="More">More</button>
+																		</div>
+
+
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div></li>
+												<li class="soundBadgeList__item"><div class="soundBadge compact sc-media">
+														<span class="soundBadge__artwork sc-media-image">
+															<div class="image m-sound image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-9 m-loaded"
+																style="height: 50px; width: 50px;">
+																<span
+																	style="background-image: url(&quot;https://i1.sndcdn.com/artworks-000300411846-ka2yyc-t50x50.jpg&quot;); width: 50px; height: 50px; opacity: 1;"
+																	class="sc-artwork sc-artwork-placeholder-9  image__full g-opacity-transition" aria-label="샴푸의요정" aria-role="img"></span>
+
+															</div> <span class="soundBadge__tierIndicator g-go-plus-marker-artwork-small g-go-marker-artwork sc-hidden"></span> <span
+															class="soundBadge__playButton"> <a role="button" href="" class="sc-button-play playButton sc-button sc-button-large"
+																tabindex="0" title="Play" draggable="true">Play</a>
+														</span>
+														</span>
+														<div class="sc-media-content soundBadge__content">
+															<div class="soundTitle sc-clearfix sc-hyphenate sc-type-h3">
+																<div class="soundTitle__titleContainer">
+
+																	<div class="soundTitle__usernameTitleContainer">
+																		<div class="sc-type-light soundTitle__secondary  sc-truncate">
+																			<a href="/dokiwa" class="soundTitle__username
+              sc-link-light
+            "> <span
+																				class="soundTitle__usernameText">dokiwa.</span>
+																			</a>
+																		</div>
+																		<a class="soundTitle__title sc-link-dark" href="/dokiwa/oiwr71zg0liz" title="샴푸의요정"> <span class="sc-truncate">샴푸의요정</span>
+																		</a>
+																	</div>
+																	<div class="soundTitle__additionalContainer"></div>
+																</div>
+															</div>
+
+															<ul class="soundStats sc-ministats-group" aria-label="Track stats">
+																<li title="494,899 plays" class="sc-ministats-item"><span class="sc-ministats sc-ministats-small sc-ministats-plays"> <span
+																		class="sc-visuallyhidden">494,899 plays</span><span aria-hidden="true">494K</span>
+																</span></li>
+
+																<li title="9,903 likes" class="sc-ministats-item"><a href="/dokiwa/oiwr71zg0liz/likes" rel="nofollow"
+																	class="sc-ministats sc-ministats-small sc-ministats-likes"> <span class="sc-visuallyhidden">View all likes</span><span
+																		aria-hidden="true">9,903</span>
+																</a></li>
+
+																<li title="377 reposts" class="sc-ministats-item"><a href="/dokiwa/oiwr71zg0liz/reposts" rel="nofollow"
+																	class="sc-ministats sc-ministats-small sc-ministats-reposts"> <span class="sc-visuallyhidden">View all reposts</span><span
+																		aria-hidden="true">377</span>
+																</a></li>
+																<li title="126 comments" class="sc-ministats-item"><a href="/dokiwa/oiwr71zg0liz/comments" rel="nofollow"
+																	class="sc-ministats sc-ministats-small sc-ministats-comments"> <span class="sc-visuallyhidden">View all comments</span><span
+																		aria-hidden="true">126</span>
+																</a></li>
+															</ul>
+
+															<div class="soundBadge__additional">
+																<div class="soundBadge__actions">
+																	<div class="soundActions sc-button-toolbar soundActions__small">
+																		<div class="sc-button-group sc-button-group-small">
+																			<button type="button" class="sc-button-like sc-button sc-button-small sc-button-icon sc-button-responsive"
+																				aria-describedby="tooltip-29854" tabindex="0" title="Like" aria-label="Like">Like</button>
+																			<button type="button" class="sc-button-more sc-button sc-button-small sc-button-icon sc-button-responsive" tabindex="0"
+																				aria-haspopup="true" role="button" aria-owns="dropdown-button-29856" title="More" aria-label="More">More</button>
+																		</div>
+
+
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div></li>
+											</ul>
+										</div>
+									</div>
+								</article>
+
+								<article class="sidebarModule g-all-transitions-200-linear soundInSetsModule" style="display: none;">
+									<a class="sidebarHeader g-flex-row-centered-spread sc-link-light  sc-border-light-bottom" rel="nofollow"
+										href="/kehdii2sme/kehdii-love-is-far-away/albums">
+										<h3 class="sidebarHeader__title sc-type-light sc-font g-flex-row-centered ">
+											<span class="sc-icon sc-icon-set sc-icon-large sidebarHeader__icon"></span> <span class="sidebarHeader__actualTitle">In albums</span>
+										</h3> <span class="sidebarHeader__more sc-type-h3">View all</span>
+									</a>
+									<div class="sidebarContent" style="min-height: 210.60000000000002px;">
+										<div class="soundBadgeList compact lazyLoadingList">
+											<ul class="sc-list-nostyle sc-clearfix"></ul>
+										</div>
+									</div>
+								</article>
+								<article class="sidebarModule g-all-transitions-200-linear soundInSetsModule" style="display: block;">
+									<a class="sidebarHeader g-flex-row-centered-spread sc-link-light  sc-border-light-bottom" rel="nofollow"
+										href="/kehdii2sme/kehdii-love-is-far-away/sets">
+										<h3 class="sidebarHeader__title sc-type-light sc-font g-flex-row-centered ">
+											<span class="sc-icon sc-icon-set sc-icon-large sidebarHeader__icon"></span> <span class="sidebarHeader__actualTitle">In playlists</span>
+										</h3> <span class="sidebarHeader__more sc-type-h3">View all</span>
+									</a>
+									<div class="sidebarContent" style="min-height: 210.60000000000002px;">
+										<div class="soundBadgeList compact lazyLoadingList">
+											<ul class="sc-list-nostyle sc-clearfix">
+												<li class="soundBadgeList__item"><div class="soundBadge compact sc-media hiddenActions playlist">
+														<span class="soundBadge__artwork sc-media-image">
+															<div class="image m-playlist image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-3 m-loaded"
+																style="height: 50px; width: 50px;">
+																<span
+																	style="background-image: url(&quot;https://i1.sndcdn.com/artworks-000377272821-fs3dtq-t50x50.jpg&quot;); width: 50px; height: 50px; opacity: 1;"
+																	class="sc-artwork sc-artwork-placeholder-3  image__full g-opacity-transition" aria-label="Reposted By Mellowbeat Seeker 4"
+																	aria-role="img"></span>
+
+															</div>
+														</span>
+														<div class="sc-media-content soundBadge__content">
+															<div class="soundTitle sc-clearfix sc-hyphenate sc-type-h3">
+																<div class="soundTitle__titleContainer">
+
+																	<div class="soundTitle__usernameTitleContainer">
+																		<div class="sc-type-light soundTitle__secondary  sc-truncate">
+																			<a href="/s3u7rws74fxs" rel="nofollow" class="soundTitle__username
+              sc-link-light
+            "> <span
+																				class="soundTitle__usernameText">신현철</span>
+																			</a>
+																		</div>
+																		<a class="soundTitle__title sc-link-dark" href="/s3u7rws74fxs/sets/repostedbymellowbeat4" rel="nofollow"
+																			title="Reposted By Mellowbeat Seeker 4"> <span class="sc-truncate">Reposted By Mellowbeat Seeker 4</span>
+																		</a>
+																	</div>
+																	<div class="soundTitle__additionalContainer"></div>
+																</div>
+															</div>
+
+															<ul class="soundStats sc-ministats-group" aria-label="Playlist stats">
+																<li title="34 likes" class="sc-ministats-item"><a href="/s3u7rws74fxs/sets/repostedbymellowbeat4/likes" rel="nofollow"
+																	class="sc-ministats sc-ministats-small sc-ministats-likes"> <span class="sc-visuallyhidden">View all likes</span><span
+																		aria-hidden="true">34</span>
+																</a></li>
+
+																<li title="4 reposts" class="sc-ministats-item"><a href="/s3u7rws74fxs/sets/repostedbymellowbeat4/reposts" rel="nofollow"
+																	class="sc-ministats sc-ministats-small sc-ministats-reposts"> <span class="sc-visuallyhidden">View all reposts</span><span
+																		aria-hidden="true">4</span>
+																</a></li>
+															</ul>
+
+															<div class="soundBadge__additional"></div>
+														</div>
+													</div></li>
+												<li class="soundBadgeList__item"><div class="soundBadge compact sc-media hiddenActions playlist">
+														<span class="soundBadge__artwork sc-media-image">
+															<div class="image m-playlist image__lightOutline readOnly sc-artwork sc-artwork-placeholder-3 m-loaded"
+																style="height: 50px; width: 50px;">
+																<span
+																	style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000425635365-vqrqrt-t50x50.jpg&quot;); width: 50px; height: 50px; opacity: 1;"
+																	class="sc-artwork sc-artwork-placeholder-3  image__full g-opacity-transition" aria-label="80-90s" aria-role="img"></span>
+
+															</div>
+														</span>
+														<div class="sc-media-content soundBadge__content">
+															<div class="soundTitle sc-clearfix sc-hyphenate sc-type-h3">
+																<div class="soundTitle__titleContainer">
+
+																	<div class="soundTitle__usernameTitleContainer">
+																		<div class="sc-type-light soundTitle__secondary  sc-truncate">
+																			<a href="/phanha-vy" rel="nofollow" class="soundTitle__username
+              sc-link-light
+            "> <span
+																				class="soundTitle__usernameText">Veira Vian</span>
+																			</a>
+																		</div>
+																		<a class="soundTitle__title sc-link-dark" href="/phanha-vy/sets/vibes-80-90s" rel="nofollow" title="80-90s"> <span
+																			class="sc-truncate">80-90s</span>
+																		</a>
+																	</div>
+																	<div class="soundTitle__additionalContainer"></div>
+																</div>
+															</div>
+
+															<ul class="soundStats sc-ministats-group" aria-label="Playlist stats">
+
+															</ul>
+
+															<div class="soundBadge__additional"></div>
+														</div>
+													</div></li>
+												<li class="soundBadgeList__item"><div class="soundBadge compact sc-media hiddenActions playlist">
+														<span class="soundBadge__artwork sc-media-image">
+															<div class="image m-playlist image__lightOutline readOnly" style="height: 50px; width: 50px;">
+																<span style="width: 50px; height: 50px;" class="sc-artwork sc-artwork-placeholder-9  image__full" aria-label="Retro" aria-role="img"></span>
+
+															</div>
+														</span>
+														<div class="sc-media-content soundBadge__content">
+															<div class="soundTitle sc-clearfix sc-hyphenate sc-type-h3">
+																<div class="soundTitle__titleContainer">
+
+																	<div class="soundTitle__usernameTitleContainer">
+																		<div class="sc-type-light soundTitle__secondary  sc-truncate">
+																			<a href="/user-863457156" rel="nofollow" class="soundTitle__username
+              sc-link-light
+            "> <span
+																				class="soundTitle__usernameText">julme</span>
+																			</a>
+																		</div>
+																		<a class="soundTitle__title sc-link-dark" href="/user-863457156/sets/retro" rel="nofollow" title="Retro"> <span
+																			class="sc-truncate">Retro</span>
+																		</a>
+																	</div>
+																	<div class="soundTitle__additionalContainer"></div>
+																</div>
+															</div>
+
+															<ul class="soundStats sc-ministats-group" aria-label="Playlist stats">
+
+															</ul>
+
+															<div class="soundBadge__additional"></div>
+														</div>
+													</div></li>
+											</ul>
+										</div>
+									</div>
+								</article>
+								<article class="sidebarModule g-all-transitions-200-linear soundLikesModule" style="display: block;">
+									<a class="sidebarHeader g-flex-row-centered-spread sc-link-light  sc-border-light-bottom" rel="nofollow"
+										href="/kehdii2sme/kehdii-love-is-far-away/likes">
+										<h3 class="sidebarHeader__title sc-type-light sc-font g-flex-row-centered ">
+											<span class="sc-icon sc-icon-like sc-icon-large sidebarHeader__icon"></span> <span class="sidebarHeader__actualTitle">991 likes</span>
+										</h3> <span class="sidebarHeader__more sc-type-h3">View all</span>
+									</a>
+									<div class="sidebarContent" style="min-height: 60px;">
+										<div class="usersList floating user-avatar-badge-hover lazyLoadingList">
+											<ul class="usersList__list lazyLoadingList__list sc-list-nostyle">
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/user-329421585" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly" style="height: 40px; width: 40px;">
+																		<span style="width: 40px; height: 40px;" class="sc-artwork sc-artwork-placeholder-1 image__rounded image__full"
+																			aria-label="User 329421585’s avatar" aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/o-so-403206327" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-8 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-eh5odYJGBHO4gyLl-93Hljg-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-8 image__rounded image__full g-opacity-transition" aria-label="sooya’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/2ubtxzqe1q0l" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-10 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000844046776-s2czac-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-10 image__rounded image__full g-opacity-transition" aria-label="경들렌’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/7-848799444" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-10 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-w3JOay3zZDg7Z6ov-wqqz4g-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-10 image__rounded image__full g-opacity-transition" aria-label="7 %’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/fleurissant" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-5 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-OGJK0huixLv1CnAK-RHdgfg-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-5 image__rounded image__full g-opacity-transition" aria-label="nue’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/jaehyuk-yoo-711859830" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-3 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000307335191-gzid5y-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-3 image__rounded image__full g-opacity-transition" aria-label="JaeHyuk Yoo’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/lee-youngkyung" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-5 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-2cKzVS2aIk3XGvvz-clHdUw-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-5 image__rounded image__full g-opacity-transition" aria-label="lee’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/planetjoo" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-3 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000533943864-m1mu43-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-3 image__rounded image__full g-opacity-transition" aria-label="j00cy__’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/user-808159824" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly" style="height: 40px; width: 40px;">
+																		<span style="width: 40px; height: 40px;" class="sc-artwork sc-artwork-placeholder-7 image__rounded image__full"
+																			aria-label="휘 빈’s avatar" aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+											</ul>
+										</div>
+									</div>
+								</article>
+								<article class="sidebarModule g-all-transitions-200-linear soundRepostsModule" style="display: block;">
+									<a class="sidebarHeader g-flex-row-centered-spread sc-link-light  sc-border-light-bottom" rel="nofollow"
+										href="/kehdii2sme/kehdii-love-is-far-away/reposts">
+										<h3 class="sidebarHeader__title sc-type-light sc-font g-flex-row-centered ">
+											<span class="sc-icon sc-icon-repost sc-icon-large sidebarHeader__icon"></span> <span class="sidebarHeader__actualTitle">36 reposts</span>
+										</h3> <span class="sidebarHeader__more sc-type-h3">View all</span>
+									</a>
+									<div class="sidebarContent" style="min-height: 60px;">
+										<div class="usersList floating user-avatar-badge-hover lazyLoadingList">
+											<ul class="usersList__list lazyLoadingList__list sc-list-nostyle">
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/s1de9h" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-10 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000484033749-6rq7ox-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-10 image__rounded image__full g-opacity-transition" aria-label="Lonely Soul’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/yourparadis" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-0 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-alTcxQg82krplUYC-oCFAsQ-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-0 image__rounded image__full g-opacity-transition" aria-label="soo’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/01925" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-1 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-V8C9kPm0zoA9b3JY-2H6MBA-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-1 image__rounded image__full g-opacity-transition" aria-label="그런이유로연락하지마세요’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/tsumi1234" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-2 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-6TQRCRobgx5PfY8w-5rHhtA-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-2 image__rounded image__full g-opacity-transition" aria-label="tsumi’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/uhs4hzqxkej3" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-3 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000645164913-ldmcl0-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-3 image__rounded image__full g-opacity-transition" aria-label="Juel0216’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/ladyofthelake" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-10 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000228681679-ynffd0-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-10 image__rounded image__full g-opacity-transition" aria-label="LadyoftheLake’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/ym6pkotwe1ov" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-10 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000798108265-ey2z7h-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-10 image__rounded image__full g-opacity-transition" aria-label="전지원’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/5-32" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly customImage sc-artwork sc-artwork-placeholder-9 image__rounded m-loaded"
+																		style="height: 40px; width: 40px;">
+																		<span
+																			style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000688323015-7se516-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;"
+																			class="sc-artwork sc-artwork-placeholder-9 image__rounded image__full g-opacity-transition" aria-label="5/32’s avatar"
+																			aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+												<li class="usersList__item"><div class="g-avatar-badge userAvatarBadge">
+														<div class="g-avatar-badge-body">
+															<a href="/user-658189501" rel="nofollow" class="g-avatar-badge-avatar-link">
+																<div class="g-avatar-badge-avatar">
+																	<div class="image m-user image__whiteOutline readOnly" style="height: 40px; width: 40px;">
+																		<span style="width: 40px; height: 40px;" class="sc-artwork sc-artwork-placeholder-5 image__rounded image__full"
+																			aria-label="sz’s avatar" aria-role="img"></span>
+
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div></li>
+											</ul>
+										</div>
+									</div>
+								</article>
+								<article class="sidebarModule g-all-transitions-200-linear mobileApps">
+									<div class="sidebarHeader g-flex-row-centered-spread sc-type-light sc-border-light-bottom">
+										<h3 class="sidebarHeader__title sc-type-light sc-font g-flex-row-centered noIcon">
+											<span class="sidebarHeader__actualTitle">Go mobile</span>
+										</h3>
+										<span class="sidebarHeader__more sc-type-h3 mobileApps__dismiss sc-ir">Dismiss</span>
+									</div>
+									<div class="sidebarContent">
+										<div class="mobileAppsButtons sc-clearfix m-sidebar">
+											<a href="https://itunes.apple.com/us/app/soundcloud/id336353151?mt=8" target="_blank"
+												class="mobileAppsButtons__button mobileAppsButtons__appStore g-appStoreButton g-appStoreButton__appStore sc-ir"> Download on the App
+												Store </a> <a
+												href="https://play.google.com/store/apps/details?id=com.soundcloud.android&amp;hl=us&amp;referrer=utm_source%3Dsoundcloud%26utm_medium%3Dweb%26utm_campaign%3Dweb_xsell_listen_page"
+												target="_blank" class="mobileAppsButtons__button mobileAppsButtons__googlePlay g-appStoreButton g-appStoreButton__googlePlay sc-ir">
+												Get it on Google Play </a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="l-footer sc-text-verylight standard sc-border-light-top">
+								<a class="sc-link-verylight" href="/terms-of-use" title="Terms of use">Legal</a>&nbsp;⁃ <a class="sc-link-verylight" href="/pages/privacy"
+									title="Privacy policy">Privacy</a>&nbsp;⁃ <a class="sc-link-verylight" href="/pages/cookies" title="Cookies policy">Cookies</a>&nbsp;⁃ <a
+									class="sc-link-verylight" href="/imprint" title="Company information">Imprint</a>&nbsp;⁃ <a class="sc-link-verylight"
+									href="//creators.soundcloud.com" target="_blank" title="Creator Resources">Creator Resources</a>&nbsp;⁃ <a class="sc-link-verylight"
+									href="//blog.soundcloud.com" target="_blank" title="SoundCloud blog">Blog</a>&nbsp;⁃ <a class="sc-link-verylight" href="/charts/top"
+									title="Charts">Charts</a>&nbsp;⁃ <a class="sc-link-verylight" href="/popular/searches" title="Popular searches">Popular searches</a>
+								<div class="footer__localeSelector">
+									<a type="button" class="localeSelector sc-pointer" tabindex="0" aria-haspopup="true" role="button" aria-owns="dropdown-button-29671">Language:
+										<span class="sc-text">English (US)</span>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="ad-container">
-						<a href="https://www.linkedin.com/in/michael-pompili-916a0837/" target="_blank"><img src="https://res.cloudinary.com/mpompili/image/upload/v1526335358/linkedinad.jpg"></a>
-					</div>
-					<div class="extraspace"></div>
 				</div>
 			</div>
+		</div>
 	</section>
 	<!-- Blog Section End -->
 
