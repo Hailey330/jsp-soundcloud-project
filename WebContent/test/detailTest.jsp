@@ -27,6 +27,7 @@
 <link rel="stylesheet" type="text/css" href="/soundcloud/login/css/main.css">
 
 <link rel="stylesheet" href="/soundcloud/music/style.css">
+<link rel="stylesheet" href="/soundcloud/css/detail.css">
 
 </head>
 
