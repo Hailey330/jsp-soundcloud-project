@@ -52,18 +52,12 @@ Last Update: Dec 14, 2018
 @import url(css/default-assets/classy-nav.css);
 @import url(css/owl.carousel.min.css);
 @import url(css/magnific-popup.css);
-@import url(css/default-assets/audioplayer.css);
+@import url(/soundcloud/css/audioplayerEdit.css);
 @import url(css/font-awesome.min.css);
 /* :: 1.0 Reboot CSS */
 * {
 	margin: 0;
 	padding: 0;
-}
-
-body {
-	font-family: "HK Grotesk";
-	font-weight: 400;
-	font-size: 14px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a, a:active, a:focus, a:hover {
-	color: #232323;
+/* 	color: #232323; */
 	text-decoration: none;
 	-webkit-transition-duration: 500ms;
 	-o-transition-duration: 500ms;
@@ -1022,9 +1016,9 @@ rotate
 }
 
 .audioplayer .audioplayer-time {
-	font-size: 14px;
-	color: #232323;
-	font-weight: 600;
+	font-size: 13px;
+	color: #fff;
+	font-weight: 300;
 }
 
 .audioplayer .audioplayer-volume-adjust>div {

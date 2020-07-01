@@ -1,6 +1,8 @@
 /*
 	AUTHOR: Osvaldas Valutis, www.osvaldas.info
 */
+
+
 (function($, window, document, undefined) {
     var isTouch = 'ontouchstart' in window,
         eStart = isTouch ? 'touchstart' : 'mousedown',
@@ -17,6 +19,7 @@
             var audioElement = document.createElement('audio');
             return !!(audioElement.canPlayType && audioElement.canPlayType('audio/' + file.split('.').pop().toLowerCase() + ';').replace(/no/, ''));
         };
+        
 
     $.fn.audioPlayer = function(params) {
         var params = $.extend({
@@ -71,7 +74,7 @@
             var thePlayer = $('<div class="' + params.classPrefix + '">' + (isSupport ? $('<div>').append($this.eq(0).clone()).html() : '<embed src="' + audioFile + '" width="0" height="0" volume="100" autostart="' + isAutoPlay.toString() + '" loop="' + isLoop.toString() + '" />') + '<div class="' + cssClass.playPause + '" title="' + params.strPlay + '"><a href="#">' + params.strPlay + '</a></div></div>'),
                 theAudio = isSupport ? thePlayer.find('audio') : thePlayer.find('embed'),
                 theAudio = theAudio.get(0);
-
+                
             if (isSupport) {
                 thePlayer.find('audio').css({
                     'width': 0,
