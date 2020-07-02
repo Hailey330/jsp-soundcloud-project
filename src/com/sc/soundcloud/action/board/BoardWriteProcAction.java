@@ -22,13 +22,21 @@ public class BoardWriteProcAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 0. 인증 확인
 		HttpSession session = request.getSession();
-//				if(session.getAttribute("principal") == null) {
-//					Script.getMessage("잘못된 접근!", response);
-//					return;
-//				}
-		Users principal = (Users) session.getAttribute("principal");
+		if(session.getAttribute("principal") == null) {
+			Script.getMessage("잘못된 접근입니다.", response);
+			return; 
+		}
+		Users principal = (Users)session.getAttribute("principal");
 
-		// 1. write.jsp 에서 넘긴 파일 받기
+		// 1. request에 title 값 null인지 확인하기 
+		if(
+				request.getParameter("title") == null ||
+				request.getParameter("title").equals("")
+		) {
+			return;
+		}
+		
+		// 2. write.jsp 에서 넘긴 파일 받기
 		String realPath = request.getServletContext().getRealPath("/upload");
 		System.out.println("realPath2 : " + realPath);
 		String contextPath = request.getServletContext().getContextPath();
@@ -55,7 +63,7 @@ public class BoardWriteProcAction implements Action {
 			fileImage = contextPath + "/upload/" +  userImage;
 			System.out.println("fileImage : " + fileImage);
 			
-			// 2. DB 에 넣기
+			// 3. DB 에 넣기
 			Board board = Board.builder()
 					.id(boardId)
 					.userId(userId)
@@ -64,7 +72,7 @@ public class BoardWriteProcAction implements Action {
 					.fileImage(fileImage)
 					.build();
 
-			// 3. BoardRepository 연결해서 update(board) 함수 호출
+			// 4. BoardRepository 연결해서 update(board) 함수 호출
 			BoardRepository boardRepository = BoardRepository.getInstance();
 			int result = boardRepository.update(board);
 

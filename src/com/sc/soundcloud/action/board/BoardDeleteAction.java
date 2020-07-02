@@ -17,7 +17,7 @@ import com.sc.soundcloud.repository.BoardRepository;
 import com.sc.soundcloud.repository.ReplyRepository;
 import com.sc.soundcloud.util.Script;
 
-public class BoardDetailAction implements Action {
+public class BoardDeleteAction implements Action {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		

@@ -28,6 +28,27 @@ public class BoardRepository {
 	private PreparedStatement pstmt = null;
 	private ResultSet rs = null;
 
+	public int updateFile(Board board) {
+		final String SQL = "UPDATE board SET musicFile = ? WHERE userid = ? AND id = ?";
+
+		try {
+			conn = DBConn.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			// 물음표 완성하기
+			pstmt.setString(1, board.getMusicFile());
+			pstmt.setInt(2, board.getUserId());
+			pstmt.setInt(3, board.getId());
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(TAG + "updateFile : " + e.getMessage());
+		} finally {
+			DBConn.close(conn, pstmt);
+		}
+		return -1;
+	}
+	
+	
 	public int findByMaxBoardId(int userId) {
 		final String SQL = "SELECT max(id) FROM board WHERE userId = ?";
 
@@ -45,27 +66,6 @@ public class BoardRepository {
 			System.out.println(TAG + "findByMaxBoardId : " + e.getMessage());
 		} finally {
 			DBConn.close(conn, pstmt, rs);
-		}
-		return -1;
-	}
-
-	public int update(int id, String title, String content, String fileImage) {
-		final String SQL = "UPDATE board SET title = ?, content = ?, fileImage = ? WHERE id = ?";
-
-		try {
-			conn = DBConn.getConnection();
-			pstmt = conn.prepareStatement(SQL);
-			// 물음표 완성하기
-			pstmt.setString(1, title);
-			pstmt.setString(2, content);
-			pstmt.setString(3, fileImage);
-			pstmt.setInt(4, id);
-			return pstmt.executeUpdate();
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println(TAG + "update(id, title, content, fileImage) : " + e.getMessage());
-		} finally {
-			DBConn.close(conn, pstmt);
 		}
 		return -1;
 	}

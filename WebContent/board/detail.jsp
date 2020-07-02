@@ -224,13 +224,25 @@
 												<!-- Like, Repost, Share 버튼 -->
 												<div class="soundActions sc-button-toolbar listenEngagement__actions soundActions__medium">
 													<div class="sc-button-group sc-button-group-medium">
-														<button type="button" class="sc-button-like sc-button sc-button-medium sc-button-responsive" aria-describedby="tooltip-2126" tabindex="0" title="Like" aria-label="Like">Like</button>
-														<button type="button" class="sc-button-repost sc-button sc-button-medium sc-button-responsive" aria-describedby="tooltip-2128" tabindex="0" aria-haspopup="true" role="button" aria-owns="dropdown-button-2129" title="Repost" aria-label="Repost">Repost</button>
-														<button type="button" class="sc-button-share sc-button sc-button-medium sc-button-responsive" aria-describedby="tooltip-2131" tabindex="0" aria-haspopup="true" role="button" aria-owns="dropdown-button-2132" title="Share" aria-label="Share">Share</button>
-														<button type="button" class="sc-button-queue addToNextUp sc-button sc-button-medium sc-button-responsive" aria-describedby="tooltip-2134" tabindex="0" title="Add to Next up" aria-label="Add to Next up">
-															<span class="sc-button-alt-labels"><span class="sc-button-label-default">Add to Next up</span><span class="sc-button-label-hover">Add to Next up</span><span class="sc-button-label-alt">Add to Next up</span><span class="sc-button-label-alt">Added</span></span>
-														</button>
-														<button type="button" class="sc-button-more sc-button sc-button-medium sc-button-responsive" tabindex="0" aria-haspopup="true" role="button" aria-owns="dropdown-button-2136" title="More" aria-label="More">More</button>
+														<c:choose>
+															<c:when test="${detailDto.boardDto.board.userId eq sessionScope.principal.id}">
+																<a href="/soundcloud/board?cmd=updateFile&boardId=${detailDto.boardDto.board.id}">
+																	<button type="button" class="sc-button-edit sc-button sc-button-medium sc-button-responsive" aria-describedby="tooltip-2126" tabindex="0" title="Update">Update</button>
+																</a>
+																<a>
+																	<button type="button" onclick="deleteById(${detailDto.boardDto.board.id})" class="sc-button-delete sc-button sc-button-medium sc-button-responsive" aria-describedby="tooltip-2128" tabindex="0" aria-haspopup="true" role="button" title="Delete">Delete</button>
+																</a>
+															</c:when>
+															<c:otherwise>
+																<button type="button" class="sc-button-like sc-button sc-button-medium sc-button-responsive" aria-describedby="tooltip-2126" tabindex="0" title="Like" aria-label="Like">Like</button>
+																<button type="button" class="sc-button-repost sc-button sc-button-medium sc-button-responsive" aria-describedby="tooltip-2128" tabindex="0" aria-haspopup="true" role="button" aria-owns="dropdown-button-2129" title="Repost" aria-label="Repost">Repost</button>
+																<button type="button" class="sc-button-share sc-button sc-button-medium sc-button-responsive" aria-describedby="tooltip-2131" tabindex="0" aria-haspopup="true" role="button" aria-owns="dropdown-button-2132" title="Share" aria-label="Share">Share</button>
+																<button type="button" class="sc-button-queue addToNextUp sc-button sc-button-medium sc-button-responsive" aria-describedby="tooltip-2134" tabindex="0" title="Add to Next up" aria-label="Add to Next up">
+																	<span class="sc-button-alt-labels"><span class="sc-button-label-default">Add to Next up</span><span class="sc-button-label-hover">Add to Next up</span><span class="sc-button-label-alt">Add to Next up</span><span class="sc-button-label-alt">Added</span></span>
+																</button>
+																<button type="button" class="sc-button-more sc-button sc-button-medium sc-button-responsive" tabindex="0" aria-haspopup="true" role="button" aria-owns="dropdown-button-2136" title="More" aria-label="More">More</button>
+															</c:otherwise>
+														</c:choose>
 													</div>
 												</div>
 

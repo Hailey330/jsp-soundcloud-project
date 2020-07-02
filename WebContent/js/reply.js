@@ -46,7 +46,7 @@ function replyWrite(boardId, userId) {
 			console.log(result);
 			renderReplyList(result, userId);
 			$("#tokenInput__comment").val("");
-			location.reload();
+//			location.reload();
 		}
 	}).fail(function(error) {
 		alert("댓글 작성 실패");

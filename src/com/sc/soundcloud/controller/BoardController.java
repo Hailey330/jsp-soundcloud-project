@@ -10,10 +10,16 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.sc.soundcloud.action.Action;
+import com.sc.soundcloud.action.board.BoardDeleteAction;
+import com.sc.soundcloud.action.board.BoardDeleteProcAction;
 import com.sc.soundcloud.action.board.BoardDetailAction;
 import com.sc.soundcloud.action.board.BoardFileUploadAction;
 import com.sc.soundcloud.action.board.BoardFileUploadProcAction;
 import com.sc.soundcloud.action.board.BoardStreamAction;
+import com.sc.soundcloud.action.board.BoardUpdateFileAction;
+import com.sc.soundcloud.action.board.BoardUpdateFileProcAction;
+import com.sc.soundcloud.action.board.BoardUpdateWriteAction;
+import com.sc.soundcloud.action.board.BoardUpdateWriteProcAction;
 import com.sc.soundcloud.action.board.BoardWriteAction;
 import com.sc.soundcloud.action.board.BoardWriteProcAction;
 
@@ -58,7 +64,19 @@ public class BoardController extends HttpServlet {
 			return new BoardWriteProcAction(); 
 		} else if(cmd.equals("detail")) {
 			return new BoardDetailAction(); 
-		} 
+		} else if(cmd.equals("updateFile")) {
+			return new BoardUpdateFileAction(); 
+		} else if(cmd.equals("updateFileProc")) {
+			return new BoardUpdateFileProcAction(); 
+		} else if(cmd.equals("updateWrite")) {
+			return new BoardUpdateWriteAction(); 
+		} else if(cmd.equals("updateWriteProc")) {
+			return new BoardUpdateWriteProcAction(); 
+		} else if(cmd.equals("delete")) {
+			return new BoardDeleteAction(); 
+		} else if(cmd.equals("deleteProc")) {
+			return new BoardDeleteProcAction(); 
+		}
 		return null;
 	}
 

@@ -6,7 +6,9 @@
 <div class="limiter">
 	<div class="container-login100" style="background-image: url('/soundcloud/login/images/main.jpeg');">
 		<div class="wrap-login100">
+		
 			<form action="/soundcloud/users?cmd=joinProc" method="POST" class="login100-form validate-form" onsubmit="return usernameValidate();">
+				
 				<span class="login100-form-title p-b-50 p-t-27"> Create account </span>
 
 				<div class="wrap-input100 validate-input" data-validate="Enter your name">
