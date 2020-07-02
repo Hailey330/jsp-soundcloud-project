@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.sc.soundcloud.db.DBConn;
+import com.sc.soundcloud.dto.BoardResponseDto;
 import com.sc.soundcloud.model.Board;
 import com.sc.soundcloud.model.Users;
 
@@ -169,10 +170,15 @@ public class BoardRepository {
 		return null;
 	}
 
-	public Board findById(int id) {
-		final String SQL = "SELECT * FROM board WHERE id = ?";
-		Board board = null;
-
+	public BoardResponseDto findById(int id) {
+		StringBuilder sb = new StringBuilder();
+		sb.append("SELECT b.id, b.userId, b.title, b.content, b.likeCount, b.playCount, b.createDate, b.musicFile, b.fileImage, b.username, u.userprofile ");
+		sb.append("FROM board b INNER JOIN users u ");
+		sb.append("ON b.userId = u.id ");
+		sb.append("WHERE b.id = ?");
+		final String SQL = sb.toString();
+		BoardResponseDto boardDto = null;
+	
 		try {
 			conn = DBConn.getConnection();
 			pstmt = conn.prepareStatement(SQL);
@@ -181,20 +187,23 @@ public class BoardRepository {
 			rs = pstmt.executeQuery();
 			// if 돌려서 rs → java 오브젝트에 넣기
 			if(rs.next()) {
-				board = new Board();
-				board.setId(rs.getInt("id"));
-				board.setUserId(rs.getInt("userId"));
-				board.setUserName(rs.getString("userName"));
-				board.setTitle(rs.getString("title"));
-				board.setContent(rs.getString("content"));
-				board.setMusicFile(rs.getString("musicFile"));
-				board.setFileImage(rs.getString("fileImage"));
-				board.setLikeCount(rs.getInt("likeCount"));
-				board.setPlayCount(rs.getInt("playCount"));
-				board.setCreateDate(rs.getTimestamp("createDate"));
-
-				return board;
+				boardDto = new BoardResponseDto();
+				Board board = Board.builder()
+						.id(rs.getInt(1))
+						.userId(rs.getInt(2))
+						.title(rs.getString(3))
+						.content(rs.getString(4))
+						.likeCount(rs.getInt(5))
+						.playCount(rs.getInt(6))
+						.createDate(rs.getTimestamp(7))
+						.musicFile(rs.getString(8))
+						.fileImage(rs.getString(9))
+						.userName(rs.getString(10))
+						.build();
+				boardDto.setBoard(board);
+				boardDto.setUserProfile(rs.getString(11));
 			}
+			return boardDto;
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(TAG + "findById : " + e.getMessage());

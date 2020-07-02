@@ -134,7 +134,7 @@
 									<div class="listenArtworkWrapper">
 										<div class="listenArtworkWrapper__artwork">
 											<div class="image m-sound image__lightOutline readOnly customImage interactive sc-artwork sc-artwork-placeholder-0 m-loaded" tabindex="0" style="height: 100%; width: 100%;">
-												<span style="background-image: url(&quot;${detailDto.board.fileImage}&quot;); width: 100%; height: 100%; opacity: 1;" class="sc-artwork sc-artwork-placeholder-0  image__full g-opacity-transition" aria-label="${detailDto.board.title}" aria-role="img"></span>
+												<span style="background-image: url(&quot;${detailDto.boardDto.board.fileImage}&quot;); width: 100%; height: 100%; opacity: 1;" class="sc-artwork sc-artwork-placeholder-0  image__full g-opacity-transition" aria-label="${detailDto.boardDto.board.title}" aria-role="img"></span>
 
 											</div>
 										</div>
@@ -150,9 +150,9 @@
 
 											<div class="soundTitle__usernameTitleContainer">
 												<div class="soundTitle__usernameHeroContainer">
-													<a href="#" class="soundTitle__username g-opacity-transition-500 g-type-shrinkwrap-inline g-type-shrinkwrap-large-secondary soundTitle__usernameHero sc-type-medium"> ${detailDto.board.userName} </a>
+													<a href="#" class="soundTitle__username g-opacity-transition-500 g-type-shrinkwrap-inline g-type-shrinkwrap-large-secondary soundTitle__usernameHero sc-type-medium">${detailDto.boardDto.board.userName} </a>
 												</div>
-												<span class="soundTitle__title sc-font g-type-shrinkwrap-inline g-type-shrinkwrap-large-primary"> <span>${detailDto.board.title}</span>
+												<span class="soundTitle__title sc-font g-type-shrinkwrap-inline g-type-shrinkwrap-large-primary"> <span>${detailDto.boardDto.board.title}</span>
 												</span>
 											</div>
 											<div class="soundTitle__additionalContainer">
@@ -167,7 +167,7 @@
 
 								<div class="fullHero__info">
 									<div class="fullHero__uploadTime sc-type-medium">
-										<time class="relativeTime" title="8 August 2018" datetime="${detailDto.board.createDate}">
+										<time class="relativeTime" title="8 August 2018" datetime="${detailDto.boardDto.board.createDate}">
 											<span class="sc-visuallyhidden">1 year ago</span><span aria-hidden="true">1 year ago</span>
 										</time>
 									</div>
@@ -210,7 +210,7 @@
 														</div>
 
 														<div class="commentForm__inputWrapper">
-															<input onkeyup="enterkey(${detailDto.board.id}, ${sessionScope.principal.id});" type="text" class="commentForm__input" id="tokenInput__comment" autocomplete="off" placeholder="Write a comment" aria-invalid="false" aria-describedby="">
+															<input onkeyup="enterkey(${detailDto.boardDto.board.id}, ${sessionScope.principal.id});" type="text" class="commentForm__input" id="tokenInput__comment" autocomplete="off" placeholder="Write a comment" aria-invalid="false" aria-describedby="">
 															<div class="commentInput__validation g-input-validation g-input-validation-hidden" id=""></div>
 														</div>
 
@@ -236,10 +236,10 @@
 
 												<!-- playCount, LikeCount, Repost 보여주기 -->
 												<ul class="soundStats sc-ministats-group listenEngagement__stats sc-ministats-group-right" aria-label="Track stats">
-													<li title="${detailDto.board.playCount} plays" class="sc-ministats-item"><span class="sc-ministats sc-ministats-medium sc-ministats-plays"> <span class="sc-visuallyhidden">${detailDto.board.playCount} plays</span> <span aria-hidden="true">${detailDto.board.playCount}</span>
+													<li title="${detailDto.boardDto.board.playCount} plays" class="sc-ministats-item"><span class="sc-ministats sc-ministats-medium sc-ministats-plays"> <span class="sc-visuallyhidden">${detailDto.boardDto.board.playCount} plays</span> <span aria-hidden="true">${detailDto.boardDto.board.playCount}</span>
 													</span></li>
 
-													<li title="${detailDto.board.likeCount} likes" class="sc-ministats-item"><a href="/kehdii2sme/kehdii-love-is-far-away/likes" rel="nofollow" class="sc-ministats sc-ministats-medium sc-ministats-likes"> <span class="sc-visuallyhidden">View all likes</span> <span aria-hidden="true">${detailDto.board.likeCount}</span>
+													<li title="${detailDto.boardDto.board.likeCount} likes" class="sc-ministats-item"><a href="/kehdii2sme/kehdii-love-is-far-away/likes" rel="nofollow" class="sc-ministats sc-ministats-medium sc-ministats-likes"> <span class="sc-visuallyhidden">View all likes</span> <span aria-hidden="true">${detailDto.boardDto.board.likeCount}</span>
 													</a></li>
 
 												</ul>
@@ -257,13 +257,11 @@
 												<div class="userBadge__avatar" style="width: 120px; height: 120px;">
 													<div class="g-avatar-badge userAvatarBadge">
 														<div class="g-avatar-badge-body">
-															<a href="/kehdii2sme" class="g-avatar-badge-avatar-link">
-																<div class="g-avatar-badge-avatar">
-																	<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-0 image__rounded m-loaded" style="height: 100%; width: 100%;">
-																		<span style="background-image: url(#); width: 100%; height: 100%; opacity: 1;" class="sc-artwork sc-artwork-placeholder-0 image__rounded image__full g-opacity-transition" aria-label="Kehdii’s avatar" aria-role="img"> </span>
-																	</div>
+															<div class="g-avatar-badge-avatar">
+																<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-0 image__rounded m-loaded" style="height: 100%; width: 100%;">
+																	<img onerror="this.src='/soundcloud/image/userProfile.png'" src="${detailDto.boardDto.userProfile}" style="width: 100%; height: 100%; opacity: 1;" class="sc-artwork sc-artwork-placeholder-0 image__rounded image__full g-opacity-transition">
 																</div>
-															</a>
+															</div>
 														</div>
 													</div>
 												</div>
@@ -272,7 +270,7 @@
 													<div class="userBadge__title">
 														<h3 class="userBadge__username sc-type-light">
 															<!-- creator 이름 누르면 cretor 공간으로 -->
-															<a href="#" title="Visit creator's profile" class="userBadge__usernameLink sc-link-dark sc-truncate"> <span class="sc-truncate">${detailDto.board.userName}</span>
+															<a href="#" title="Visit creator's profile" class="userBadge__usernameLink sc-link-dark sc-truncate"> <span class="sc-truncate">${detailDto.boardDto.board.userName}</span>
 															</a> <span></span>
 														</h3>
 													</div>

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.sc.soundcloud.action.Action;
+import com.sc.soundcloud.dto.BoardResponseDto;
 import com.sc.soundcloud.dto.DetailResponseDto;
 import com.sc.soundcloud.dto.ReplyResponseDto;
 import com.sc.soundcloud.model.Board;
@@ -19,6 +20,14 @@ import com.sc.soundcloud.util.Script;
 public class BoardDetailAction implements Action {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//		if(
+//				request.getParameter("id") == null || 
+//				request.getParameter("id").equals("")
+//		) {
+//			Script.back("잘못된 접근입니다.", response);
+//			return;
+//		}
+		
 		// stream 에서 넘긴 boardId 값 받기
 		int boardId = Integer.parseInt(request.getParameter("boardId"));
 
@@ -26,13 +35,13 @@ public class BoardDetailAction implements Action {
 		ReplyRepository replyRepository = ReplyRepository.getInstance();
 		
 		// Board 값 다 들고와서 뿌리기
-		Board board = boardRepository.findById(boardId);
+		BoardResponseDto boardDto = boardRepository.findById(boardId);
 		// Reply + User 해당 게시물의 댓글과 댓글 작성자 - 복수 값 
 		List<ReplyResponseDto> replyDtos = replyRepository.findAll(boardId);
 		
 		DetailResponseDto detailDto = 
 				DetailResponseDto.builder()
-				.board(board)
+				.boardDto(boardDto)
 				.replyDtos(replyDtos)
 				.build();
 		if (detailDto != null) {

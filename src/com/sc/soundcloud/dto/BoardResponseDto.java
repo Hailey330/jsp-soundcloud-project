@@ -1,6 +1,6 @@
 package com.sc.soundcloud.dto;
 
-import java.util.List;
+import com.sc.soundcloud.model.Board;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class DetailResponseDto {
-	private BoardResponseDto boardDto;
-	private List<ReplyResponseDto> replyDtos;
+public class BoardResponseDto {
+	private Board board;
+	private String userProfile;
 }
