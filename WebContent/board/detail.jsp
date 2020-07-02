@@ -34,10 +34,7 @@
 </head>
 
 <body>
-	<!-- Page Preloder -->
-	<div id="preloder">
-		<div class="loader"></div>
-	</div>
+
 
 	<!-- Offcanvas Menu Begin -->
 	<div class="offcanvas__menu__overlay"></div>
@@ -137,7 +134,7 @@
 									<div class="listenArtworkWrapper">
 										<div class="listenArtworkWrapper__artwork">
 											<div class="image m-sound image__lightOutline readOnly customImage interactive sc-artwork sc-artwork-placeholder-0 m-loaded" tabindex="0" style="height: 100%; width: 100%;">
-												<span style="background-image: url(&quot;https://i1.sndcdn.com/artworks-000385909926-zwkof6-t500x500.jpg&quot;); width: 100%; height: 100%; opacity: 1;" class="sc-artwork sc-artwork-placeholder-0  image__full g-opacity-transition" aria-label="Love Is Far Away" aria-role="img"></span>
+												<span style="background-image: url(&quot;${detailDto.board.fileImage}&quot;); width: 100%; height: 100%; opacity: 1;" class="sc-artwork sc-artwork-placeholder-0  image__full g-opacity-transition" aria-label="${detailDto.board.title}" aria-role="img"></span>
 
 											</div>
 										</div>
@@ -174,7 +171,7 @@
 											<span class="sc-visuallyhidden">1 year ago</span><span aria-hidden="true">1 year ago</span>
 										</time>
 									</div>
-									<a rel="nofollow" class="sc-tag" href="/tags/city"><span class="sc-truncate sc-type-medium" style="max-width: 120px">City</span></a>
+									<a rel="nofollow" class="sc-tag" href="/tags/city"><span class="sc-truncate sc-type-medium" style="max-width: 120px">tag</span></a>
 								</div>
 
 
@@ -204,16 +201,19 @@
 
 										<div class="listenEngagement sc-clearfix">
 											<div class="listenEngagement__commentForm">
+
+												<!-- 댓글박스 -->
 												<div class="commentForm commentForm__transition m-large visible">
 													<div class="commentForm__wrapper commentForm__transition">
 														<div class="commentForm__avatar">
 															<span style="background-image: url(https://i1.sndcdn.com/avatars-000334380658-j9enab-t50x50.jpg); width: 40px; height: 40px;" class="sc-artwork sc-artwork-placeholder-5  " aria-label="민경’s avatar" aria-role="img"></span>
 														</div>
-														<div class="commentForm__inputWrapper">
-															<input type="text" class="commentForm__input" id="tokenInput__comment" autocomplete="off" placeholder="Write a comment" aria-invalid="false" aria-describedby="">
-															<div class="commentInput__validation g-input-validation g-input-validation-hidden" id=""></div>
 
+														<div class="commentForm__inputWrapper">
+															<input onkeyup="enterkey(${detailDto.board.id}, ${sessionScope.principal.id});" type="text" class="commentForm__input" id="tokenInput__comment" autocomplete="off" placeholder="Write a comment" aria-invalid="false" aria-describedby="">
+															<div class="commentInput__validation g-input-validation g-input-validation-hidden" id=""></div>
 														</div>
+
 													</div>
 													<div class="commentForm__inputMessage g-input-validation g-input-validation-hidden">Comment must not exceed 1000 characters</div>
 												</div>
@@ -236,14 +236,12 @@
 
 												<!-- playCount, LikeCount, Repost 보여주기 -->
 												<ul class="soundStats sc-ministats-group listenEngagement__stats sc-ministats-group-right" aria-label="Track stats">
-													<li title="34,485 plays" class="sc-ministats-item"><span class="sc-ministats sc-ministats-medium sc-ministats-plays"> <span class="sc-visuallyhidden">34,485 plays</span><span aria-hidden="true">34.4K</span>
+													<li title="${detailDto.board.playCount} plays" class="sc-ministats-item"><span class="sc-ministats sc-ministats-medium sc-ministats-plays"> <span class="sc-visuallyhidden">${detailDto.board.playCount} plays</span> <span aria-hidden="true">${detailDto.board.playCount}</span>
 													</span></li>
 
-													<li title="994 likes" class="sc-ministats-item"><a href="/kehdii2sme/kehdii-love-is-far-away/likes" rel="nofollow" class="sc-ministats sc-ministats-medium sc-ministats-likes"> <span class="sc-visuallyhidden">View all likes</span><span aria-hidden="true">994</span>
+													<li title="${detailDto.board.likeCount} likes" class="sc-ministats-item"><a href="/kehdii2sme/kehdii-love-is-far-away/likes" rel="nofollow" class="sc-ministats sc-ministats-medium sc-ministats-likes"> <span class="sc-visuallyhidden">View all likes</span> <span aria-hidden="true">${detailDto.board.likeCount}</span>
 													</a></li>
 
-													<li title="36 reposts" class="sc-ministats-item"><a href="/kehdii2sme/kehdii-love-is-far-away/reposts" rel="nofollow" class="sc-ministats sc-ministats-medium sc-ministats-reposts"> <span class="sc-visuallyhidden">View all reposts</span><span aria-hidden="true">36</span>
-													</a></li>
 												</ul>
 											</div>
 										</div>
@@ -346,66 +344,48 @@
 														<span class="sc-icon sc-icon-comment sc-icon-large commentsList__icon"></span> <span class="commentsList__actualTitle">14 comments</span>
 													</h3>
 												</div>
-												<ul class="lazyLoadingList__list sc-list-nostyle sc-clearfix">
-													<li class="commentsList__item"><div class="commentItem">
-															<div class="commentItem__read">
-																<!-- user 프로필 사진 -->
-																<a class="commentItem__avatar" href="/1-10-15">
-																	<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-1 image__rounded m-loaded" style="height: 40px; width: 40px;">
-																		<span style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000817944493-h1vq3t-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;" class="sc-artwork sc-artwork-placeholder-1 image__rounded image__full g-opacity-transition" aria-label="user’s avatar" aria-role="img"></span>
-																	</div>
-																</a>
-																<div class="commentItem__content">
-																	<span class="commentItem__username sc-text-light"> <a href="#" title="Visit user’s profile" class="commentItem__usernameLink sc-link-light">user</a>
 
-																	</span>
-																	<div class="commentItem__body sc-hyphenate">
-																		<span>
-																			<p>사랑해요</p>
+												<!-- 댓글 리스트 시작 -->
+												<ul id="reply__list" class="lazyLoadingList__list sc-list-nostyle sc-clearfix">
+
+													<c:forEach var="replyDto" items="${detailDto.replyDtos}">
+														<li id="reply-${replyDto.reply.id}" class="commentsList__item">
+															<div class="commentItem">
+
+																<div class="commentItem__read">
+																	<!-- user 프로필 사진 -->
+																	<i class="commentItem__avatar">
+																		<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-1 image__rounded m-loaded" style="height: 40px; width: 40px;">
+																			<img onerror="this.src='/soundcloud/image/userProfile.png'" src="${replyDto.userProfile}" style="width: 40px; height: 40px; opacity: 1;" class="sc-artwork sc-artwork-placeholder-1 image__rounded image__full g-opacity-transition">
+																		</div>
+																	</i>
+
+																	<div class="commentItem__content">
+																		<span class="commentItem__username sc-text-light"> <i class="sc-link-light">${replyDto.username}</i>
 																		</span>
+																		<div class="commentItem__body sc-hyphenate">
+																			<span><p>${replyDto.reply.content}</p></span>
+																		</div>
 																	</div>
-																</div>
-																<div class="commentItem__meta">
-																	<span class="commentItem__createdAt sc-text-light"><time class="relativeTime" title="Posted on 27 May 2020" datetime="2020-05-27T01:42:35.000Z">
-																			<span class="sc-visuallyhidden">Posted 1 month ago</span><span aria-hidden="true">1 month ago</span>
-																		</time></span>
-																	<!-- 본인 댓글 삭제  -->
-																	<div class="commentItem__controls">
-																		<a href="#" class="sc-button sc-button-responsive sc-button-reply sc-button-small commentItem__replyButton" rel="nofollow" title="delete" aria-role="button">Delete</a>
-																	</div>
-																</div>
-															</div>
-														</div></li>
 
-													<!-- 댓글 el 로 뿌리기 -->
-													<li class="commentsList__item"><div class="commentItem">
-															<div class="commentItem__read">
-																<a class="commentItem__avatar" href="/aha-pam">
-																	<div class="image m-user image__lightOutline readOnly customImage sc-artwork sc-artwork-placeholder-1 image__rounded m-loaded" style="height: 40px; width: 40px;">
-																		<span style="background-image: url(&quot;https://i1.sndcdn.com/avatars-000724255744-wm6dnc-t50x50.jpg&quot;); width: 40px; height: 40px; opacity: 1;" class="sc-artwork sc-artwork-placeholder-1 image__rounded image__full g-opacity-transition" aria-label="Aha._. pam’s avatar" aria-role="img"></span>
+																	<div class="commentItem__meta">
+																		<span class="commentItem__createdAt sc-text-light"> <time class="relativeTime" title="Posted on 27 May 2020" datetime="2020-05-27T01:42:35.000Z">
+																				<span aria-hidden="true">1 month ago</span>
+																			</time>
+																		</span>
 
-																	</div>
-																</a>
-																<div class="commentItem__content">
-																	<span class="commentItem__username sc-text-light"> <a href="/aha-pam" title="Visit Aha._. pam’s profile" class="commentItem__usernameLink sc-link-light">Aha._. pam</a> <span class="sc-text-verylight commentItem__timestamp">at <a href="" aria-role="button" class="commentItem__timestampLink sc-link-light" title="Play from 0:59">0:59</a>:
-																	</span>
-																	</span>
-																	<div class="commentItem__body sc-hyphenate">
-																		<span><p>good</p></span>
-																	</div>
-																</div>
-																<div class="commentItem__meta">
-																	<span class="commentItem__createdAt sc-text-light"><time class="relativeTime" title="Posted on 25 March 2020" datetime="2020-03-24T17:08:56.000Z">
-																			<span class="sc-visuallyhidden">Posted 3 months ago</span><span aria-hidden="true">3 months ago</span>
-																		</time></span>
-																	<div class="commentItem__controls">
-																		<a href="/kehdii2sme/kehdii-love-is-far-away/comments/923497909" class="sc-button sc-button-responsive sc-button-reply sc-button-small commentItem__replyButton" rel="nofollow" title="Reply" aria-role="button">Reply</a>
+																		<!-- 본인 댓글 삭제  -->
+
+																		<div class="commentItem__controls">
+																			<c:if test="${replyDto.reply.userId eq sessionScope.principal.id}">
+																				<button type="button" onclick="replyDelete(${replyDto.reply.id})" class="sc-button-delete sc-button sc-button-small sc-button-icon sc-button-responsive" tabindex="0" aria-haspopup="true" role="button" aria-owns="dropdown-button-29171" title="Delete this comment" aria-label="Delete this comment">Delete this comment</button>
+																			</c:if>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div></li>
-
-
+														</li>
+													</c:forEach>
 												</ul>
 
 												<!-- 댓글 마지막 end -->
@@ -1002,6 +982,7 @@
 	<script src="/soundcloud/music/js/poca.bundle.js"></script>
 	<script src="/soundcloud/music/js/default-assets/active.js"></script>
 	<script src="/soundcloud/js/playerEdit.js"></script>
+	<script src="/soundcloud/js/reply.js"></script>
 
 	<!-- audio play 버튼 제이쿼리 -->
 	<script>

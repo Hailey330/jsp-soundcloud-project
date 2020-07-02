@@ -28,7 +28,7 @@ public class ReplyRepository {
 	private ResultSet rs = null;
 
 	
-	public List<ReplyResponseDto> findAll(int boardId) { // 매개 변수가 필요없다. 어차피 다 찾을 거니까
+	public List<ReplyResponseDto> findAll(int boardId) { 
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT r.id, r.userid, r.boardid, r.content, r.createDate, ");
 		sb.append("u.username, u.userprofile ");
@@ -71,13 +71,15 @@ public class ReplyRepository {
 		return null;
 	}
 	public int save(Reply reply) {
-		final String SQL = "";
+		final String SQL = "INSERT INTO reply(id, boardId, userId, content, createDate) VALUES(reply_seq.nextval, ?, ?, ?, sysdate)";
 		
 		try {
 			conn = DBConn.getConnection();
 			pstmt = conn.prepareStatement(SQL);
 			// 물음표 완성하기
-			
+			pstmt.setInt(1, reply.getBoardId());
+			pstmt.setInt(2, reply.getUserId());
+			pstmt.setString(3, reply.getContent());
 			return pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -107,13 +109,13 @@ public class ReplyRepository {
 	}
 	
 	public int deleteById(int id) {
-		final String SQL = "";
+		final String SQL = "DELETE FROM reply WHERE id = ?";
 		
 		try {
 			conn = DBConn.getConnection();
 			pstmt = conn.prepareStatement(SQL);
 			// 물음표 완성하기
-			
+			pstmt.setInt(1, id);
 			return pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();

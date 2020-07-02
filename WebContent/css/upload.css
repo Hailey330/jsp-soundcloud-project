@@ -70,39 +70,11 @@
 	color: #666
 }
 
-.uploadMain__foot
->
-.l-footer
-
- 
-
-a
-
-
-:not
-
- 
-
-(
-.localeSelector
-
- 
-
-){
-color
-
-
-:
-
- 
-
-#666
-
-
-
-
+.uploadMain__foot>.l-footer a:not(.localeSelector){
+	color: #666;
 }
-.uploadMain__foot>.l-footer a:not (.localeSelector ):hover {
+
+.uploadMain__foot>.l-footer a:not(.localeSelector ):hover {
 	color: #999
 }
 
