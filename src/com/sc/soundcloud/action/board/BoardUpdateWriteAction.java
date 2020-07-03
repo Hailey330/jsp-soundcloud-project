@@ -22,14 +22,30 @@ public class BoardUpdateWriteAction implements Action {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		HttpSession session = request.getSession();
-		if (session.getAttribute("principal") == null) {
-			Script.getMessage("잘못된 접근입니다.", response);
-		} else {
+		if(
+				request.getParameter("boardId") == null || 
+				request.getParameter("boardId").equals("")
+		  ) {
+			Script.back("잘못된 접근입니다.", response);
+			return;
+		}
+		
+		// detail.jsp 에서 넘긴 boardId 값 받기
+		int boardId = Integer.parseInt(request.getParameter("boardId"));
+
+		BoardRepository boardRepository = BoardRepository.getInstance();
+		// boardId 받은걸로 해당 board(title, content, musicFile, fileImage...) 찾고, 글 작성자 정보 찾음 
+		BoardResponseDto boardDto = boardRepository.findById(boardId); 
+		System.out.println("boardDto 확인 :::" + boardDto);
+
+		if(boardDto != null) {
+			request.setAttribute("boardDto", boardDto);
 			RequestDispatcher dis = request.getRequestDispatcher("board/updateWrite.jsp");
 			dis.forward(request, response);
-
+		} else {
+			Script.back("잘못된 접근입니다.", response);
 		}
+		
 	}
 		
 }

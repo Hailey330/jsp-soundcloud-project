@@ -112,7 +112,7 @@
 		<div class="container">
 			<div class="col-lg-13">
 			
-				<form action="/soundcloud/board?cmd=updateFileProc&boardId=${boardDto.board.id}" method="post" enctype="multipart/form-data">
+				<form action="/soundcloud/board?cmd=updateFileProc" method="post" enctype="multipart/form-data">
 					<div class="l-main-upload">
 						<div class="uploadMain">
 							<div class="uploadBackground"></div>
@@ -123,11 +123,13 @@
 										<div class="uploadMain__chooser">
 											<div class="chooseFiles">
 												<label class="chooseFiles__button sc-button sc-button-cta sc-button-large sc-button-color" style="min-width: 300px">Choose files to upload 
-												<input type="file" valid="musicFile" name="musicFile" class="chooseFiles__input sc-visuallyhidden"> 
+												<input type="file" id="musicFile" name="musicFile" class="chooseFiles__input sc-visuallyhidden" value="${boardDto.board.musicFile}"> 
 												</label>
 												<br>
 												<input type="hidden" name="userId" value="${sessionScope.principal.id}" /> 
 												<input type="hidden" name="boardId" value="${boardDto.board.id}" /> 
+												<input name="boardId" value="${boardDto.board.id}" /> 
+												
 												<label class="chooseFiles__button sc-button sc-button-cta sc-button-large" style="min-width: 300px">Upload 
 												<input type="submit" class="chooseFiles__input sc-visuallyhidden">
 												</label>

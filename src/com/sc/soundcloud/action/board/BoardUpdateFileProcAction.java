@@ -31,48 +31,47 @@ public class BoardUpdateFileProcAction implements Action {
 			Script.getMessage("잘못된 접근입니다.", response);
 			return;
 		}
-		
-		Users principal = (Users)session.getAttribute("principal");
+		Users principal = (Users) session.getAttribute("principal");
 
-		
-		// boardId 공백인지 아닌지 확인
-		if (
-				request.getParameter("boardId") == null || 
-				request.getParameter("boardId").equals("")
-		) {
-			return;
-		}
-
-		// 1. updateFile.jsp 에서 넘긴 boardId 값 받기
-		int boardId = Integer.parseInt(request.getParameter("boardId"));
-
-		// 2. updateFile.jsp 에서 넘긴 파일 받기
+		// 1. updateFile.jsp 에서 넘긴 파일 받기
 		String realPath = request.getServletContext().getRealPath("/upload");
+		System.out.println("updateFile realPath : " + realPath);
 		String contextPath = request.getServletContext().getContextPath();
+		System.out.println("updateFile realPath : " + realPath);
 
+		int userId;
+		int boardId;
 		String musicFile = null;
 		int maxSize = 10 * 1024 * 1024;
 
 		try {
 			MultipartRequest multi = new MultipartRequest(request, realPath, maxSize, "UTF-8",
 					new DefaultFileRenamePolicy());
+			// request 되는 순간 null로 변함
 			String userFile = multi.getFilesystemName("musicFile");
+			System.out.println("userFile : " + userFile);
+
+			userId = Integer.parseInt(multi.getParameter("userId"));
+			boardId = Integer.parseInt(multi.getParameter("boardId"));
+
 			musicFile = contextPath + "/upload/" + userFile;
+			System.out.println("musicFile : " + musicFile);
 
-			// 3. DB에 넣기
-			Board board = Board.builder()
-					.id(boardId)
-					.userId(principal.getId())
-					.musicFile(musicFile)
-					.build();
+			Board board = Board.builder().id(boardId).userId(userId).userName(principal.getUsername())
+					.musicFile(musicFile).build();
 
-			// 4. BoardRepository 연결해서 update(boardId) 함수 호출
+			// 2. BoardRepository 연결해서 update(boardId) 함수 호출
 			BoardRepository boardRepository = BoardRepository.getInstance();
-			int result = boardRepository.updateFile(board);
+			int result = boardRepository.updateFile(board); // 새로운 음악파일로 update
 
-			// 5. DB에 넣은 board.musicFile 들고 이동
+			// 5. DB 에 넣은 users.userfile 값 들고 이동
 			if (result == 1) {
-				Script.href("/soundcloud/board?cmd=updateWrite&boardId=" + boardId + "&userFile=" + userFile, response);
+				BoardResponseDto boardDto = BoardResponseDto.builder().board(board).build();
+				request.setAttribute("boardDto", boardDto);
+				RequestDispatcher dis = request.getRequestDispatcher("board/updateWrite.jsp");
+				dis.forward(request, response);
+
+//						Script.href("/soundcloud/board?cmd=updateWrite", response);
 			} else {
 				Script.back("ERROR! 다시 진행해주세요.", response);
 			}
@@ -80,6 +79,5 @@ public class BoardUpdateFileProcAction implements Action {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
 }

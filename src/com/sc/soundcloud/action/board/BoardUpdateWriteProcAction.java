@@ -31,24 +31,24 @@ public class BoardUpdateWriteProcAction implements Action {
 			Script.getMessage("잘못된 접근입니다.", response);
 			return;
 		}
-		
+		System.out.println("접근 확인 ::: " + "principal");
 		Users principal = (Users) session.getAttribute("principal");
-		System.out.println("principal ::: " + principal);
-		
-		// 1. request에 title 값 null인지 확인하기
-		if (
-				request.getParameter("title") == null || 
-				request.getParameter("title").equals("")
-		) {
-				return;
-		}
-		System.out.println("title ::: " + title);
+
+		// boardId 공백인지 아닌지 확인
+//			if (
+//					request.getParameter("boardId") == null || 
+//					request.getParameter("boardId").equals("")
+//			) {
+//				return;
+//			}
 
 		// 2. updateWrite.jsp 에서 넘긴 파일 받기
 		String realPath = request.getServletContext().getRealPath("/upload");
+		System.out.println("updateWrite realPath : " + realPath);
 		String contextPath = request.getServletContext().getContextPath();
-		System.out.println("contextPath WRITE UPDATE ::: " + contextPath);
+		System.out.println("updateWrite realPath : " + realPath);
 
+		int userId;
 		int boardId;
 		String fileImage = null;
 		int maxSize = 10 * 1024 * 1024;
@@ -56,20 +56,24 @@ public class BoardUpdateWriteProcAction implements Action {
 		try {
 			MultipartRequest multi = new MultipartRequest(request, realPath, maxSize, "UTF-8",
 					new DefaultFileRenamePolicy());
-			// request 되는 순간 null로 변함
-			String userImage = multi.getFilesystemName("musicImage");
 
+			// 1. updateFile.jsp 에서 넘긴 boardId 값 받기
+			String userImage = multi.getFilesystemName("musicImage");			
+			System.out.println("update userImage : " + userImage);
+
+			userId = Integer.parseInt(multi.getParameter("userId"));
 			boardId = Integer.parseInt(multi.getParameter("boardId"));
-			System.out.println("boardId ::: " + boardId);
+			
 			String title = multi.getParameter("title");
 			String content = multi.getParameter("content");
 
-			fileImage = contextPath + "/upload/" + userImage;
+			fileImage = contextPath + "/upload/" +  userImage;
+			System.out.println("update fileImage : " + fileImage);
 
-			// 3. DB 에 넣기
+			// 3. DB에 넣기
 			Board board = Board.builder()
 					.id(boardId)
-					.userId(principal.getId())
+					.userId(userId)
 					.title(title)
 					.content(content)
 					.fileImage(fileImage)
@@ -81,8 +85,7 @@ public class BoardUpdateWriteProcAction implements Action {
 
 			// 5. 페이지 이동
 			if (result == 1) {
-				Script.href("/soundcloud/board?cmd=detail", response);
-//						Script.href("/soundcloud/board?cmd=detail&id" + id, response);
+				Script.href("/soundcloud/board?cmd=detail&boardId=" + boardId, response);
 			} else {
 				Script.back("ERROR! 다시 진행해주세요.", response);
 			}
@@ -90,5 +93,6 @@ public class BoardUpdateWriteProcAction implements Action {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
 	}
 }

@@ -121,7 +121,7 @@
 								<div class="ds-image-box">
 									<img id="img__wrap"> 		
 									<label class="imageLabel">Reload Image 
-									<input class="h-input" type="file" name="musicImage" id="musicImage" required>
+									<input class="h-input" type="file" name="musicImage" id="musicImage" value="${boardDto.board.fileImage}">
 									</label>
 								</div>
 
@@ -129,11 +129,14 @@
 
 								<div class="track-detail-form">
 									<p class="tdf-text tdf-required">Title</p>
-									<input class="txt-input" type="text" name="title" id="title" value="${param.userFile}" required>
+									<input class="txt-input" type="text" name="title" id="title" value="${boardDto.board.title}" required>
 									<p class="tdf-text">Description</p>
-									<textarea class="txt-input txta active-ring" name="content" id="content"></textarea>
+									<textarea class="txt-input txta active-ring" name="content" id="content">${boardDto.board.content}</textarea>
 									<input type="hidden" name="userId" value="${sessionScope.principal.id}" /> 
-									<input type="hidden" name="boardId" value="${param.boardId}" />
+									<input value="${sessionScope.principal.id}" /> 
+									
+									<input type="hidden" name="boardId" value="${boardDto.board.id}" />
+									<input name="boardId" value="${boardDto.board.id}" />
 									<input class="inputLabel" type="submit" value="create">
 								</div>
 							</div>
