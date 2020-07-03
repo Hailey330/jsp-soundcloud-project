@@ -27,14 +27,6 @@ public class BoardWriteProcAction implements Action {
 			return; 
 		}
 		Users principal = (Users)session.getAttribute("principal");
-
-		// 1. request에 title 값 null인지 확인하기 
-		if(
-				request.getParameter("title") == null ||
-				request.getParameter("title").equals("")
-		) {
-			return;
-		}
 		
 		// 2. write.jsp 에서 넘긴 파일 받기
 		String realPath = request.getServletContext().getRealPath("/upload");

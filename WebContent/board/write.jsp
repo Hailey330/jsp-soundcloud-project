@@ -132,7 +132,8 @@
 									<input class="txt-input" type="text" name="title" id="title" value="${param.userFile}" required>
 									<p class="tdf-text">Description</p>
 									<textarea class="txt-input txta active-ring" name="content" id="content"></textarea>
-									<input type="hidden" name="userId" value="${sessionScope.principal.id}" /> <input type="hidden" name="boardId" value="${param.boardId}" />
+									<input type="hidden" name="userId" value="${sessionScope.principal.id}" /> 
+									<input type="hidden" name="boardId" value="${param.boardId}" />
 									<input class="inputLabel" type="submit" value="create">
 								</div>
 							</div>

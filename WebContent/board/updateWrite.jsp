@@ -121,7 +121,7 @@
 								<div class="ds-image-box">
 									<img id="img__wrap" src="${boardDto.board.fileImage}"> 		
 									<label class="imageLabel">Reload Image 
-									<input class="h-input" type="file" name="musicImage" id="musicImage" value="${boardDto.board.fileImage}">
+									<input class="h-input" type="file" name="musicImage" id="musicImage" value="${boardDto.board.fileImage}" required>
 									</label>
 								</div>
 

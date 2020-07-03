@@ -59,6 +59,7 @@ public class BoardUpdateFileProcAction implements Action {
 			String title = multi.getParameter("title");
 			String content = multi.getParameter("content");
 			String fileImage = multi.getParameter("musicImage");
+			
 			musicFile = contextPath + "/upload/" + userFile;
 			System.out.println("musicFile : " + musicFile);
 

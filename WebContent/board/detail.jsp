@@ -322,6 +322,8 @@
 												<div class="truncatedAudioInfo m-collapsed">
 													<div class="truncatedAudioInfo__wrapper" style="max-height: 140px;">
 														<div class="truncatedAudioInfo__content">
+															<div class="sc-type-small">
+															<div><p>${detailDto.boardDto.board.content}</p></div></div>
 															<div class="soundTags">
 																<div class="sc-tag-group">
 																	<a href="/tags/kpop" class="sc-tag sc-tag-medium"><span class="sc-truncate">kpop</span></a> <a href="/tags/boyrec" class="sc-tag sc-tag-medium"><span class="sc-truncate">boyrec</span></a> <a href="/tags/gopyol" class="sc-tag sc-tag-medium"><span class="sc-truncate">gopyol</span></a> <a href="/tags/yubin" class="sc-tag sc-tag-medium"><span class="sc-truncate">yubin</span></a> <a href="/tags/kehdii" class="sc-tag sc-tag-medium"><span class="sc-truncate">kehdii</span></a> <a href="/tags/citypop" class="sc-tag sc-tag-medium"><span class="sc-truncate">citypop</span></a> <a href="/tags/%EC%8B%9C%ED%8B%B0%ED%8C%9D" class="sc-tag sc-tag-medium"><span class="sc-truncate">시티팝</span></a> <a href="/tags/%EC%94%A8%ED%8B%B0%ED%8C%9D" class="sc-tag sc-tag-medium"><span class="sc-truncate">씨티팝</span></a> <a href="/tags/%EC%BC%80%EC%9D%B4%ED%8C%9D" class="sc-tag sc-tag-medium"><span class="sc-truncate">케이팝</span></a> <a href="/tags/%EB%B3%B4%EC%9D%B4%EB%A0%89"
@@ -993,6 +995,8 @@
 	<script src="/soundcloud/music/js/default-assets/active.js"></script>
 	<script src="/soundcloud/js/playerEdit.js"></script>
 	<script src="/soundcloud/js/reply.js"></script>
+	<script src="/soundcloud/js/detail.js"></script>
+	
 
 	<!-- audio play 버튼 제이쿼리 -->
 	<script>
