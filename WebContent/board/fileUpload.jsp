@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
 
 <title>Upload your music &amp; audio and share it with the world. on SoundCloud</title>
 
